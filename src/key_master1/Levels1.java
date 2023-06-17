@@ -706,7 +706,6 @@ public class Levels1 {
         lev1.openPlayground7();
         lev1.openPlayground8();
         lev1.openPlayground9();
-        lev1.openPlayground10();
     }
     
     
