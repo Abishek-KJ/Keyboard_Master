@@ -690,6 +690,9 @@ public class Levels1 {
                    w.processQuestion(Key_Master1.canvas.getText());
                    
                }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
            }
        });
    }
