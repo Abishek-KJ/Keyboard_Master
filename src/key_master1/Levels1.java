@@ -679,9 +679,19 @@ public class Levels1 {
            public void actionPerformed(ActionEvent e){
                try{
                    key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level10 = "Bjarne Straustrop";
+                   
+                   Key_Master1.canvas.setText(level10);
+                   Key_Master1.canvas.addKeyListener(w);
+                   Key_Master1.submit.addActionListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   
                }
            }
-       })
+       });
    }
    
     public static void main(String[] args) throws Exception{
@@ -696,6 +706,7 @@ public class Levels1 {
         lev1.openPlayground7();
         lev1.openPlayground8();
         lev1.openPlayground9();
+        lev1.openPlayground10();
     }
     
     
