@@ -84,7 +84,7 @@ public class Levels1 {
         
         level1 = new JLabel();
         level1.setFont(new Font("arial",Font.PLAIN,20));
-        level1.setText("Level 1 : 2 Lines(40 Words)");
+        level1.setText("Level 1 : 2 Lines(37 Words)");
         level1.setForeground(Color.WHITE);
         level1.setBounds(70,76,270,30);
         
@@ -105,7 +105,7 @@ public class Levels1 {
         
         level2 = new JLabel();
         level2.setFont(new Font("arial",Font.PLAIN,20));
-        level2.setText("Level 2 :  Lines (  Words)");
+        level2.setText("Level 2 : 2 Lines (32 Words)");
         level2.setForeground(Color.WHITE);
         level2.setBounds(70,136,270,30);
         
@@ -124,7 +124,7 @@ public class Levels1 {
         
          level3 = new JLabel();
          level3.setFont(new Font("arial",Font.PLAIN,20));
-         level3.setText("Level 3 :  Lines (  Words)");
+         level3.setText("Level 3 : 2 Lines (42 Words)");
          level3.setForeground(Color.WHITE);
          level3.setBounds(70,196,270,30);
          
@@ -145,7 +145,7 @@ public class Levels1 {
          
          level4 = new JLabel();
          level4.setFont(new Font("arial",Font.PLAIN,20));
-         level4.setText("Level 4 :  Lines (  Words)");
+         level4.setText("Level 4 : 2 Lines (36 Words)");
          level4.setForeground(Color.WHITE);
          level4.setBounds(70,256,270,30);
          
@@ -167,7 +167,7 @@ public class Levels1 {
         
         level5 = new JLabel();
         level5.setFont(new Font("arial",Font.PLAIN,20));
-        level5.setText("Level 5 :  Lines (  Words)");
+        level5.setText("Level 5 : 2 Lines (33 Words)");
         level5.setForeground(Color.WHITE);
         level5.setBounds(70,316,270,30);
         
@@ -188,7 +188,7 @@ public class Levels1 {
         //Level 6 Configuration Starts Here.........
         level6 = new JLabel();
         level6.setFont(new Font("arial",Font.PLAIN,20));
-        level6.setText("Level 6 :  Lines (  Words)");
+        level6.setText("Level 6 : 3 Lines (56 Words)");
         level6.setForeground(Color.WHITE);
         level6.setBounds(70,376,270,30);
         
@@ -210,7 +210,7 @@ public class Levels1 {
         
         level7 = new JLabel();
         level7.setFont(new Font("arial",Font.PLAIN,20));
-        level7.setText("Level 7 :  Lines (  Words)");
+        level7.setText("Level 7 : 3 Lines (51 Words)");
         level7.setForeground(Color.WHITE);
         level7.setBounds(70,436,270,30);
         
@@ -231,7 +231,7 @@ public class Levels1 {
         
         level8 = new JLabel();
         level8.setFont(new Font("arial",Font.PLAIN,20));
-        level8.setText("Level 8 :  Lines(  Words)");
+        level8.setText("Level 8 : 3 Lines(65 Words)");
         level8.setForeground(Color.WHITE);
         level8.setBounds(70,496,270,30);
         
@@ -253,7 +253,7 @@ public class Levels1 {
         
         level9 = new JLabel();
         level9.setFont(new Font("arial",Font.PLAIN,20));
-        level9.setText("Level 9 :  Lines(  Words)");
+        level9.setText("Level 9 : 3 Lines(59 Words)");
         level9.setForeground(Color.WHITE);
         level9.setBounds(70,556,270,30);
         
@@ -273,7 +273,7 @@ public class Levels1 {
         
         level10 = new JLabel();
         level10.setFont(new Font("arial",Font.PLAIN,20));
-        level10.setText("Level 10 :  Lines(  Words)");
+        level10.setText("Level 10 : 3 Lines(63 Words)");
         level10.setForeground(Color.WHITE);
         level10.setBounds(70,616,270,30);
         
@@ -594,7 +594,7 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level6 = "Microsoft";
+                   String level6 = "Once upon a time, there was a tortoise and a hare. The tortoise was slow and steady, always taking its time, while the hare was fast and full of energy. They lived in a beautiful forest, and one sunny day, they decided to have a race to settle their ongoing argument about who was the fastest.";
                    
                    Key_Master1.canvas.setText(level6);
                    Key_Master1.canvas.addKeyListener(w);
@@ -617,7 +617,7 @@ public class Levels1 {
               Working w = new Working();
               w.key = key;
                
-              String level7 = "Bill Gates";
+              String level7 = "The tortoise knew it couldn't match the hare's speed, but it believed in its own persistence and determination. The hare, on the other hand, was overconfident and believed victory would be easy. The animals gathered at the starting line, and the race began with a signal from the wise old owl.";
               
               Key_Master1.canvas.setText(level7);
               Key_Master1.canvas.addKeyListener(w);
@@ -640,7 +640,7 @@ public class Levels1 {
                   Working w = new Working();
                   w.key = key;
                   
-                  String level8 = "Abishek";
+                  String level8 = "With a burst of energy, the hare sprinted ahead, leaving the tortoise far behind in a cloud of dust. The hare was so fast that it quickly disappeared from sight. Meanwhile, the tortoise kept plodding along at its own slow and steady pace, never giving up. It focused on putting one foot in front of the other, believing that consistency would eventually lead to success.";
                   
                   Key_Master1.canvas.setText(level8);
                   Key_Master1.canvas.addKeyListener(w);
@@ -662,12 +662,15 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level9 = "Dennis Ritchie";
+                   String level9 = "As the hare raced ahead, it became overconfident and decided to take a nap under a shady tree, thinking there was plenty of time to rest. Meanwhile, the tortoise continued its slow but determined progress, inching closer to the finish line. The tortoise knew that perseverance and determination were the keys to victory, no matter how slow it seemed.";
                    
                    Key_Master1.canvas.setText(level9);
                    Key_Master1.canvas.addKeyListener(w);
                    Key_Master1.submit.addActionListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
                }
            }
        });
@@ -682,7 +685,7 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level10 = "Bjarne Straustrop";
+                   String level10 = "When the hare woke up, it saw the tortoise nearing the finish line. Panicking, the hare sprinted, but it was too late. The tortoise had won. The animals cheered, impressed by the tortoise's perseverance.The hare learned that speed alone isn't enough and that overconfidence can lead to defeat. The tortoise valued consistency and never giving up. They became friends, celebrating humility and determination.";
                    
                    Key_Master1.canvas.setText(level10);
                    Key_Master1.canvas.addKeyListener(w);

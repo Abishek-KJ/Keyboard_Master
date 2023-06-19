@@ -150,7 +150,9 @@ public  class Working implements KeyListener,ActionListener{
         getQuestion = question;
         String words[] = question.split(" ");
         System.out.println("From question: "+question);
-        System.out.println("Word Count: "+words.length);
+        System.err.println("--------------------------------");
+        System.err.println("Words Count : "+words.length);
+        System.err.println("--------------------------------");
         count = 1;
         for(String word : words){           
             System.out.println("Words "+count+++" : "+word);
@@ -250,7 +252,7 @@ public  class Working implements KeyListener,ActionListener{
     public static  String dictionary(String search){ //declared static keyword to avoid object creation error
         try{
          System.out.println("Execution Starts");
-        BufferedReader reader = new BufferedReader(new FileReader("D:\\Abishek\\Dictionary\\english-words-master/words_alpha.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/words_alpha.txt"));
         String line;
         while((line=reader.readLine()) != null){
            if(line.equalsIgnoreCase(search)){
