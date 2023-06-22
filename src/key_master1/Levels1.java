@@ -317,7 +317,7 @@ public class Levels1 {
         
         level11 = new JLabel();
         level11.setFont(new Font("arial",Font.PLAIN,20));
-        level11.setText("Level 11 :  Lines( Words)");
+        level11.setText("Level 11 : 4 Lines(101 Words)");
         level11.setBackground(Color.GRAY);
         level11.setForeground(Color.WHITE);
         level11.setBounds(70,76,270,30);
@@ -339,7 +339,7 @@ public class Levels1 {
         
         level12 = new JLabel();
         level12.setFont(new Font("arial",Font.PLAIN,20));
-        level12.setText("Level 12 :  Lines( Words)");
+        level12.setText("Level 12 : 4 Lines(100 Words)");
         level12.setForeground(Color.WHITE);
         level12.setBounds(70,136,270,30);
         
@@ -360,7 +360,7 @@ public class Levels1 {
         
         level13 = new JLabel();
         level13.setFont(new Font("arial",Font.PLAIN,20));
-        level13.setText("Level 13 :  Lines( Words)");
+        level13.setText("Level 13 : 4 Lines(80 Words)");
         level13.setForeground(Color.WHITE);
         level13.setBounds(70,196,270,30);
         
@@ -383,7 +383,7 @@ public class Levels1 {
         
         level14 = new JLabel();
         level14.setFont(new Font("arial",Font.PLAIN,20));
-        level14.setText("Level 14 :  Lines( Words)");
+        level14.setText("Level 14 : 4 Lines(73 Words)");
         level14.setBackground(Color.GRAY);
         level14.setForeground(Color.WHITE);
         level14.setBounds(70,256,270,30);
@@ -405,7 +405,7 @@ public class Levels1 {
         
         level15 = new JLabel();
         level15.setFont(new Font("arial",Font.PLAIN,20));
-        level15.setText("Level 15 :  Lines( Words)");
+        level15.setText("Level 15 : 4 Lines(71 Words)");
         level15.setForeground(Color.WHITE);
         level15.setBounds(70,316,270,30);
         
@@ -428,7 +428,7 @@ public class Levels1 {
         
         level16 = new JLabel();
         level16.setFont(new Font("arial",Font.PLAIN,20));
-        level16.setText("Level 16 :  Lines( Words)");
+        level16.setText("Level 16 : 5 Lines(92 Words)");
         level16.setForeground(Color.WHITE);
         level16.setBounds(70,376,270,30);
         
@@ -450,7 +450,7 @@ public class Levels1 {
         
         level17 = new JLabel();
         level17.setFont(new Font("arial",Font.PLAIN,20));
-        level17.setText("Level 17 :  Lines( Words)");
+        level17.setText("Level 17 : 5 Lines(93 Words)");
         level17.setForeground(Color.WHITE);
         level17.setBounds(70,436,270,30);
         
@@ -473,7 +473,7 @@ public class Levels1 {
         
         level18 = new JLabel();
         level18.setFont(new Font("arial",Font.PLAIN,20));
-        level18.setText("Level 18 :  Lines( Words)");
+        level18.setText("Level 18 : 5 Lines(87 Words)");
         level18.setForeground(Color.WHITE);
         level18.setBounds(70,496,270,30);
         
@@ -495,7 +495,7 @@ public class Levels1 {
         
         level19 = new JLabel();
         level19.setFont(new Font("arial",Font.PLAIN,20));
-        level19.setText("Level 19 :  Lines( Words)");
+        level19.setText("Level 19 : 5 Lines(105 Words)");
         level19.setForeground(Color.WHITE);
         level19.setBounds(70,556,270,30);
         
@@ -519,7 +519,7 @@ public class Levels1 {
         
         level20 = new JLabel();
         level20.setFont(new Font("arial",Font.PLAIN,20));
-        level20.setText("Level 20 :  Lines( Words)");
+        level20.setText("Level 20 : 5 Lines(84 Words)");
         level20.setForeground(Color.WHITE);
         level20.setBounds(70,616,270,30);
         
@@ -737,6 +737,9 @@ public class Levels1 {
         
     }
     
+    
+    
+    //Beginner - I Button Configuration Starts Here.................
     
     public void openPlayground1(){
         open1.addActionListener(new ActionListener(){
@@ -975,6 +978,251 @@ public class Levels1 {
        });
    }
    
+   
+   //Button - I Configurtion Ends Here............
+   
+   
+   
+   
+   //Button - II Configuration starts here.............
+   
+   public void openPlayground11(){
+       open11.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+              key = new Key_Master1();
+              Working w = new Working();
+              w.key = key;
+              
+              String level11  = "In a very hot and dry desert, there was a smart crow. The crow was really thirsty and was looking for water. After flying for a long time, the crow saw a pitcher that was partly buried in the sand. The crow felt hopeful but wasn't sure if there would be any water in it. The crow flew down and looked inside the pitcher. It saw that there was a little bit of water at the bottom, but it was too low for the crow to drink using its beak. The crow thought hard, trying to figure out what to do.";
+              
+              Key_Master1.canvas.setText(level11);
+              Key_Master1.canvas.addKeyListener(w);
+              Key_Master1.submit.addActionListener(w);
+              w.processQuestion(Key_Master1.canvas.getText());      
+              }   
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   }
+   
+   
+   public void openPlayground12(){
+       open12.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level12 = "The clever crow had a really smart idea! It started picking up small stones and dropping them into the pitcher, one by one. When the stones fell into the pitcher, they pushed the water up, making it rise higher and closer to the crow's beak. The crow kept dropping more and more stones until the water level became high enough for the crow to reach it. Finally, the crow was able to drink the water and felt so happy and relieved. The crow was really proud of itself for being so clever and finding a way to quench its thirst";
+                   
+                   Key_Master1.canvas.setText(level12);
+                   Key_Master1.canvas.addKeyListener(w);
+                   Key_Master1.submit.addActionListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground13(){
+       open13.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level13 = "The moral of this fable is that intelligence, coupled with creativity, can triumph over seemingly insurmountable challenges. The crow's capacity to think outside the box and cleverly utilize available resources allowed it to discover a solution to its thirst. This fable emphasizes the significance of problem-solving and the ability to adapt to our environment. It serves as a reminder that with a touch of ingenuity and resourcefulness, we have the potential to conquer any obstacles that may obstruct our path.";
+                   
+                   Key_Master1.canvas.setText(level13);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+               
+           }
+       });
+}
+   
+   
+   
+   public void openPlayground14(){
+       open14.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level14 = "The birds witnessed the strength of unity and realized that by combining their efforts, they could overcome their individual limitations. Their shared determination and collective action not only quenched their thirst but also fostered a sense of camaraderie among them. This part of the fable serves as a powerful reminder that when we work together, supporting and uplifting one another, we can achieve remarkable things and pave the way for a brighter future.";
+                   
+                   Key_Master1.canvas.setText(level14);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   public void openPlayground15(){
+       open15.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key  = key;
+                  
+                  String level15 = "Through their collective and unwavering efforts, the birds discovered that unity and collaboration have the power to transcend individual limitations and create a profound synergy that leads to remarkable achievements. This fable serves as a timeless and inspiring reminder that by fostering a spirit of cooperation, embracing diversity, and harnessing the power of teamwork, we can overcome challenges, inspire positive change, and build a future where everyone can flourish together harmoniously.";
+                  
+                  Key_Master1.canvas.setText(level15);
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   }
+   
+   
+   public void openPlayground16(){
+       open16.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  String level16 =  "In a vast and serene grassland, bathed in the gentle hues of the setting sun, four cows named Ethan, Liam, Noah, and Oliver found solace in their shared bond. Like the blades of grass that danced harmoniously in the breeze, they formed an unbreakable quartet, their gentle moos echoing across the open meadows. With curious eyes and contented hearts, they roamed the grassy expanse, discovering the wonders of nature that surrounded them. Little did they know, their peaceful existence was about to be transformed by an encounter that would shape their destinies.";
+                  
+                  Key_Master1.canvas.setText(level16);
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   }
+   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+   public void openPlayground17(){
+       open17.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  String level17 = "Into their world of tranquil grazing strode Leo, a majestic lion whose powerful presence commanded attention and reverence. Ethan, Liam, Noah, and Oliver, captivated by the regality that emanated from his magnificent mane and piercing gaze, were instantly drawn to his aura of strength, grace, and wisdom. As they spent time in Leo's company, they marveled at his noble demeanor and gentle guidance, finding in him a mentor and protector. Their admiration grew exponentially as they witnessed firsthand his remarkable ability to navigate the challenges of life with unwavering dignity and poised resilience.";
+                  
+                  Key_Master1.canvas.setText(level17);
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   }
+   
+   public void openPlayground18(){
+       open18.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  String level18 = "One fateful day, a dark shadow cast its ominous presence upon their cherished grassland as a formidable pack of wolves emerged, their piercing howls breaking the tranquility that once enveloped the meadows. Ethan, Liam, Noah, and Oliver, fueled by an unwavering sense of loyalty and a shared responsibility to protect their fellow grazers, united in a resolute stand against the encroaching threat. With hearts beating as one, they formed an impenetrable barrier around their comrades, their determination kindled by Leo's commanding roar that echoed with unwavering resolve.";
+                  
+                  Key_Master1.canvas.setText(level18);
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   }
+   
+   public void openPlayground19(){
+       open19.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level19 = "The ferocious wolves, taken aback by the unwavering alliance of Leo and the cows, found themselves hesitant and uncertain in the face of such a formidable united front. The strength of their predatory instincts wavered, subdued by the indomitable spirit that radiated from this unified force. As the tension dissipated and peace restored, a profound sense of gratitude enveloped the hearts of Ethan, Liam, Noah, and Oliver. Overwhelmed by the magnitude of Leo's courage and selflessness, they approached him with deep admiration and sincere gratitude. In a moment of humble reverence, they offered their unwavering loyalty, pledging to stand by his side through every challenge.";
+                   
+                   Key_Master1.canvas.setText(level19);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }               
+           }
+       });
+   }
+   
+   
+   
+   
+   public void openPlayground20(){
+       open20.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level20 = "From that day forward, Leo, Ethan, Liam, Noah, and Oliver embarked on a shared journey, safeguarding the grassland and all its inhabitants. Each cow, with his unique strengths and gentle nature, contributed to the collective harmony of their newfound herd. Ethan's resourcefulness, Liam's nurturing spirit, Noah's unwavering bravery, and Oliver's keen intuition blended seamlessly with Leo's regal leadership. Together, they created a sanctuary where friendship flourished, inspiring others with their unwavering unity and determination to protect and preserve the beauty of their shared home.";
+                   
+                   Key_Master1.canvas.setText(level20);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });       
+   }
+   
+   
+   
+   
+   
+   
+   
     public static void main(String[] args) throws Exception{
         UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
         Levels1 lev1 = new Levels1();
@@ -988,6 +1236,16 @@ public class Levels1 {
         lev1.openPlayground8();
         lev1.openPlayground9();
         lev1.openPlayground10();
+        lev1.openPlayground11();
+        lev1.openPlayground12();
+        lev1.openPlayground13();
+        lev1.openPlayground14();
+        lev1.openPlayground15();
+        lev1.openPlayground16();
+        lev1.openPlayground17();
+        lev1.openPlayground18();
+        lev1.openPlayground19();
+        lev1.openPlayground20();
     }
     
     
