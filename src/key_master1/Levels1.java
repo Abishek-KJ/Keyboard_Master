@@ -57,6 +57,24 @@ public class Levels1 {
     
     
     
+    //Intermediate - I variable declaration starts here..........
+    
+    JLabel intermediateLevel1;
+    JLabel level21, level22, level23, level24, level25, level26, level27, level28, level29, level30;
+    JButton open21, open22, open23, open24, open25, open26, open27, open28, open29, open30;
+    ImageIcon intermediateStar;
+    
+   //Intermediate - I variable declaration ends here............
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     Levels1(){
         frame = new JFrame();
@@ -535,6 +553,159 @@ public class Levels1 {
         
         
         //Level 20 Configuration Ends Here.............
+        
+        
+        //Beginner - II Configuration Ends Here........
+        
+        intermediateStar = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Twostars.png");
+        
+        
+        
+        //Intermediate - I Configuration Starts Here.....
+        
+        intermediateLevel1 = new JLabel();
+        intermediateLevel1.setIcon(intermediateStar);
+        intermediateLevel1.setFont(new Font("arial",Font.PLAIN,20));
+        intermediateLevel1.setText("Intermediate - I");
+        //intermediateLevel1.setBackground(Color.GRAY);
+        intermediateLevel1.setForeground(Color.WHITE);
+        intermediateLevel1.setBounds(70,26,280,30);
+        
+        //Level 21 Configuration starts here............
+        
+        level21 = new JLabel();
+        level21.setFont(new Font("arial",Font.PLAIN,20));
+        level21.setForeground(Color.WHITE);
+        level21.setText("Level 21 :  Lines( Words)");
+        level21.setBounds(70,76,270,30);
+        
+        
+        open21 = new JButton();
+        open21.setFont(new Font("arial",Font.PLAIN,20));
+        open21.setBackground(Color.GRAY);
+        open21.setForeground(Color.WHITE);
+        open21.setIcon(play);
+        open21.setText("Open Playground");
+        open21.setBounds(1039,76,190,30);
+        
+        
+        //Level 21 Configuration ends here.............
+        
+        
+        
+        //Level 22 Configuration starts here...........
+        
+        level22 = new JLabel();
+        level22.setFont(new Font("arial",Font.PLAIN,20));
+        level22.setForeground(Color.WHITE);
+        level22.setText("Level 22 :  Lines( Words)");
+        level22.setBounds(70,136,270,30);
+        
+        
+        open22 = new JButton();
+        open22.setFont(new Font("arial",Font.PLAIN,20));
+        open22.setBackground(Color.GRAY);
+        open22.setForeground(Color.WHITE);
+        open22.setIcon(play);
+        open22.setText("Open Playground");
+        open22.setBounds(1039,136,190,30);
+        
+        //Level 22 Configuration ends here.......
+        
+        
+        
+        //Level 23 Configuration starts here........
+        
+        level23 = new JLabel();
+        level23.setFont(new Font("arial",Font.PLAIN,20));
+        level23.setForeground(Color.WHITE);
+        level23.setText("Level 23 :  Lines( Words)");
+        level23.setBounds(70,196,270,30);
+        
+        
+        
+        open23 = new JButton();
+        open23.setFont(new Font("arial",Font.PLAIN,20));
+        open23.setBackground(Color.GRAY);
+        open23.setForeground(Color.WHITE);
+        open23.setIcon(play);
+        open23.setText("Open Playground");
+        open23.setBounds(1039,196,190,30);
+        
+        //Level 23 Configuration ends here............
+        
+        
+        
+        //Level 24 Configuration starts here.................
+        
+        level24 = new JLabel();
+        level24.setFont(new Font("arial",Font.PLAIN,20));
+        level24.setForeground(Color.WHITE);
+        level24.setText("Level 24 :  Lines( Words)");
+        level24.setBounds(70,256,270,30);
+        
+        
+        open24 = new JButton();
+        open24.setFont(new Font("arial",Font.PLAIN,20));
+        open24.setBackground(Color.GRAY);
+        open24.setForeground(Color.WHITE);
+        open24.setIcon(play);
+        open24.setText("Open Playground");
+        open24.setBounds(1039,256,190,30);
+        
+        //Level 24 Configuration ends here......
+        
+        
+        
+        //Level 25 Configurtion  starts here.......
+        
+        level25 = new JLabel();
+        level25.setFont(new Font("arial",Font.PLAIN,20));
+        level25.setForeground(Color.WHITE);
+        level25.setText("Level 25 :  Lines( Words)");
+        level25.setText("Level 25 :  Lines( Words)");
+        level25.setBounds(70,316,270,30);
+        
+        
+        
+        open25 = new JButton();
+        open25.setFont(new Font("arial",Font.PLAIN,20));
+        open25.setBackground(Color.GRAY);
+        open25.setForeground(Color.WHITE);
+        open25.setIcon(play);
+        open25.setText("Open Playground");
+        open25.setBounds(1039,316,190,30);
+        
+        
+        //Level 25 Configuration ends here.....
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 
 
@@ -643,6 +814,17 @@ public class Levels1 {
         intermediate1.setLayout(null);
         intermediate1.setBackground(Color.GRAY);
         intermediate1.add(coordinations3);
+        intermediate1.add(intermediateLevel1);
+        intermediate1.add(level21);
+        intermediate1.add(open21);
+        intermediate1.add(level22);
+        intermediate1.add(open22);
+        intermediate1.add(level23);
+        intermediate1.add(open23);
+        intermediate1.add(level24);
+        intermediate1.add(open24);
+        intermediate1.add(level25);
+        intermediate1.add(open25);
         tabbedPane.add("Intermediate - I",intermediate1);
         
         intermediate2 = new JPanel();
