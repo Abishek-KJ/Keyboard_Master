@@ -680,6 +680,106 @@ public class Levels1 {
         //Level 25 Configuration ends here.....
         
         
+        //Level 26 Configuration starts here..........
+        
+        level26 = new JLabel();
+        level26.setFont(new Font("arial",Font.PLAIN,20));
+        level26.setForeground(Color.WHITE);
+        level26.setText("Level 26 :  Lines( Words)");
+        level26.setBounds(70,376,270,30);
+        
+        open26 = new JButton();
+        open26.setFont(new Font("arial",Font.PLAIN,20));
+        open26.setBackground(Color.GRAY);
+        open26.setForeground(Color.WHITE);
+        open26.setIcon(play);
+        open26.setText("Open Playground");
+        open26.setBounds(1039,376,190,30);
+        
+        //Level 26 Configuration ends here..........
+        
+        
+        //Level 27 Configuration starts here.........
+        
+        level27 = new JLabel();
+        level27.setFont(new Font("arial",Font.PLAIN,20));
+        level27.setForeground(Color.WHITE);
+        level27.setText("Level 27 :  Lines( Words)");
+        level27.setBounds(70,436,270,30);
+        
+        open27 = new JButton();
+        open27.setFont(new Font("arial",Font.PLAIN,20));
+        open27.setBackground(Color.GRAY);
+        open27.setForeground(Color.WHITE);
+        open27.setIcon(play);
+        open27.setText("Open Playground");
+        open27.setBounds(1039,436,190,30);
+        
+        //Level 27 Configuration ends here..........
+        
+        
+        //Level 28 Configuration starts here...............
+        
+        level28 = new JLabel();
+        level28.setFont(new Font("arial",Font.PLAIN,20));
+        level28.setForeground(Color.WHITE);
+        level28.setText("Level 28 :  Lines(Words)");
+        level28.setBounds(70,496,270,30);
+        
+        open28 = new JButton();
+        open28.setFont(new Font("arial",Font.PLAIN,20));
+        open28.setBackground(Color.GRAY);
+        open28.setForeground(Color.WHITE);
+        open28.setIcon(play);
+        open28.setText("Open Playground");
+        open28.setBounds(1039,496,190,30);
+        
+        //Level 28 Configuration ends here..............
+        
+        
+        //Level 29 Configuration starts here..............
+        
+        level29 = new JLabel();
+        level29.setFont(new Font("arial",Font.PLAIN,20));
+        level29.setForeground(Color.WHITE);
+        level29.setText("Level 29 :  Lines( Words)");
+        level29.setBounds(70,556,270,30);
+        
+        
+        open29 = new JButton();
+        open29.setFont(new Font("arial",Font.PLAIN,20));
+        open29.setBackground(Color.GRAY);
+        open29.setForeground(Color.WHITE);
+        open29.setIcon(play);
+        open29.setText("Open Playground");
+        open29.setBounds(1039,556,190,30);
+        
+        //Level 29 Configuration Ends here...........
+        
+        
+        //Level 30 Configuration starts here.......
+        
+        level30 = new JLabel();
+        level30.setFont(new Font("arial",Font.PLAIN,20));
+        level30.setForeground(Color.WHITE);
+        level30.setText("Level 30 :  Lines( Words)");
+        level30.setBounds(70,616,270,30);
+        
+        
+        open30 = new JButton();
+        open30.setFont(new Font("arial",Font.PLAIN,20));
+        open30.setBackground(Color.GRAY);
+        open30.setForeground(Color.WHITE);
+        open30.setIcon(play);
+        open30.setText("Open Playground");
+        open30.setBounds(1039,616,190,30);
+        
+        //Level 30 Configuration Ends here.................
+        
+        
+        
+        
+        
         
         
         
@@ -825,6 +925,16 @@ public class Levels1 {
         intermediate1.add(open24);
         intermediate1.add(level25);
         intermediate1.add(open25);
+        intermediate1.add(level26);
+        intermediate1.add(open26);
+        intermediate1.add(level27);
+        intermediate1.add(open27);
+        intermediate1.add(level28);
+        intermediate1.add(open28);
+        intermediate1.add(level29);
+        intermediate1.add(open29);
+        intermediate1.add(level30);
+        intermediate1.add(open30);
         tabbedPane.add("Intermediate - I",intermediate1);
         
         intermediate2 = new JPanel();
@@ -1400,9 +1510,248 @@ public class Levels1 {
    }
    
    
+   //Beginner - II Configuration ends here............
    
    
    
+   //Intermediate - I Configuration starts here..........
+   
+   public void openPlayground21(){
+       open21.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  String level21 = "Abishek - I";
+                  
+                  Key_Master1.canvas.setText(level21);
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   
+   }
+   
+   
+       
+       public void openPlayground22(){
+           open22.addActionListener(new ActionListener(){
+              public void actionPerformed(ActionEvent e){
+                  try{
+                      key = new Key_Master1();
+                      Working w = new Working();
+                      w.key = key;
+                      
+                      String level22 = "Abishek - II";
+                      
+                      Key_Master1.canvas.setText(level22);
+                      Key_Master1.canvas.addKeyListener(w);
+                      w.processQuestion(Key_Master1.canvas.getText());
+                      Key_Master1.submit.addActionListener(w);
+                  }
+                  catch(Exception detect){
+                      System.out.println(detect);
+                  }
+              } 
+           });
+       }
+       
+       
+       
+       public void openPlayground23(){
+           open23.addActionListener(new ActionListener(){
+              public void actionPerformed(ActionEvent e){
+                  try{
+                      key = new Key_Master1();
+                      Working w = new Working();
+                      w.key = key;
+                      
+                      String level23 = "Abishek - III";
+                      
+                      Key_Master1.canvas.setText(level23);
+                      Key_Master1.canvas.addKeyListener(w);
+                      w.processQuestion(Key_Master1.canvas.getText());
+                      Key_Master1.submit.addActionListener(w);
+                  }
+                  catch(Exception detect){
+                      System.out.println(detect);
+                  }
+              } 
+           });
+       }
+   
+   
+   
+   public void openPlayground24(){
+       open24.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level24 = "Abishek - IV";
+                   
+                   Key_Master1.canvas.setText(level24);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground25(){
+       open25.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level25 = "Abishek - V";
+                   
+                   Key_Master1.canvas.setText(level25);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }                   
+       });
+   }
+   
+   
+   
+   
+   public void openPlayground26(){
+       open26.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level26 = "Abishek - VI";
+                   
+                   Key_Master1.canvas.setText(level26);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   public void openPlayground27(){
+       open27.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level27 = "Abishek - VII";
+                   
+                   Key_Master1.canvas.setText(level27);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground28(){
+       open28.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level28 = "Abishek - VII";
+                   
+                   Key_Master1.canvas.setText(level28);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   public void openPlayground29(){
+       open29.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level29 = "Abishek - XI";
+                   
+                   Key_Master1.canvas.setText(level29);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground30(){
+       open30.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   String level30 = "Abishek - X";
+                   
+                   Key_Master1.canvas.setText(level30);
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
    
    
     public static void main(String[] args) throws Exception{
@@ -1428,6 +1777,16 @@ public class Levels1 {
         lev1.openPlayground18();
         lev1.openPlayground19();
         lev1.openPlayground20();
+        lev1.openPlayground21();
+        lev1.openPlayground22();
+        lev1.openPlayground23();
+        lev1.openPlayground24();
+        lev1.openPlayground25();
+        lev1.openPlayground26();
+        lev1.openPlayground27();
+        lev1.openPlayground28();
+        lev1.openPlayground29();
+        lev1.openPlayground30();
     }
     
     
