@@ -213,7 +213,7 @@ public  class Working implements KeyListener,ActionListener{
                     JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert", JOptionPane.OK_OPTION,icon);
                     dialog = 1;
                     }
-                    e.consume();
+                   e.consume();
                 }
                 
                 if((control_Pressed && cClicked) || (controlPressed && xClicked)){

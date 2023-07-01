@@ -67,7 +67,13 @@ public class Levels1 {
    //Intermediate - I variable declaration ends here............
     
     
+   //Intermediate - II variable declaration starts here......
     
+    JLabel intermediateLevel2;
+    JLabel level31, level32, level33, level34, level35, level36, level37, level38, level39, level40;
+    JButton open31, open32, open33, open34, open35, open36, open37, open38, open39, open40;
+    
+    //Intermediate - II variable declaration ends here........
     
     
     
@@ -134,7 +140,7 @@ public class Levels1 {
         
         level2 = new JLabel();
         level2.setFont(new Font("arial",Font.PLAIN,20));
-        level2.setText("Level 2 : 2 Lines (32 Words)");
+        level2.setText("Level 2 : 2 Lines(32 Words)");
         level2.setForeground(Color.WHITE);
         level2.setBounds(70,136,270,30);
         
@@ -153,7 +159,7 @@ public class Levels1 {
         
          level3 = new JLabel();
          level3.setFont(new Font("arial",Font.PLAIN,20));
-         level3.setText("Level 3 : 2 Lines (42 Words)");
+         level3.setText("Level 3 : 2 Lines(42 Words)");
          level3.setForeground(Color.WHITE);
          level3.setBounds(70,196,270,30);
          
@@ -174,7 +180,7 @@ public class Levels1 {
          
          level4 = new JLabel();
          level4.setFont(new Font("arial",Font.PLAIN,20));
-         level4.setText("Level 4 : 2 Lines (36 Words)");
+         level4.setText("Level 4 : 2 Lines(36 Words)");
          level4.setForeground(Color.WHITE);
          level4.setBounds(70,256,270,30);
          
@@ -196,7 +202,7 @@ public class Levels1 {
         
         level5 = new JLabel();
         level5.setFont(new Font("arial",Font.PLAIN,20));
-        level5.setText("Level 5 : 2 Lines (33 Words)");
+        level5.setText("Level 5 : 2 Lines(33 Words)");
         level5.setForeground(Color.WHITE);
         level5.setBounds(70,316,270,30);
         
@@ -217,7 +223,7 @@ public class Levels1 {
         //Level 6 Configuration Starts Here.........
         level6 = new JLabel();
         level6.setFont(new Font("arial",Font.PLAIN,20));
-        level6.setText("Level 6 : 3 Lines (56 Words)");
+        level6.setText("Level 6 : 3 Lines(56 Words)");
         level6.setForeground(Color.WHITE);
         level6.setBounds(70,376,270,30);
         
@@ -239,7 +245,7 @@ public class Levels1 {
         
         level7 = new JLabel();
         level7.setFont(new Font("arial",Font.PLAIN,20));
-        level7.setText("Level 7 : 3 Lines (51 Words)");
+        level7.setText("Level 7 : 3 Lines(51 Words)");
         level7.setForeground(Color.WHITE);
         level7.setBounds(70,436,270,30);
         
@@ -576,7 +582,7 @@ public class Levels1 {
         level21 = new JLabel();
         level21.setFont(new Font("arial",Font.PLAIN,20));
         level21.setForeground(Color.WHITE);
-        level21.setText("Level 21 :  Lines( Words)");
+        level21.setText("Level 21 : 6 Lines(114 Words)");
         level21.setBounds(70,76,270,30);
         
         
@@ -598,7 +604,7 @@ public class Levels1 {
         level22 = new JLabel();
         level22.setFont(new Font("arial",Font.PLAIN,20));
         level22.setForeground(Color.WHITE);
-        level22.setText("Level 22 :  Lines( Words)");
+        level22.setText("Level 22 : 6 Lines(129 Words)");
         level22.setBounds(70,136,270,30);
         
         
@@ -619,7 +625,7 @@ public class Levels1 {
         level23 = new JLabel();
         level23.setFont(new Font("arial",Font.PLAIN,20));
         level23.setForeground(Color.WHITE);
-        level23.setText("Level 23 :  Lines( Words)");
+        level23.setText("Level 23 : 6 Lines(126 Words)");
         level23.setBounds(70,196,270,30);
         
         
@@ -641,7 +647,7 @@ public class Levels1 {
         level24 = new JLabel();
         level24.setFont(new Font("arial",Font.PLAIN,20));
         level24.setForeground(Color.WHITE);
-        level24.setText("Level 24 :  Lines( Words)");
+        level24.setText("Level 24 : 6 Lines(115 Words)");
         level24.setBounds(70,256,270,30);
         
         
@@ -662,8 +668,8 @@ public class Levels1 {
         level25 = new JLabel();
         level25.setFont(new Font("arial",Font.PLAIN,20));
         level25.setForeground(Color.WHITE);
-        level25.setText("Level 25 :  Lines( Words)");
-        level25.setText("Level 25 :  Lines( Words)");
+        level25.setText("Level 25 : 6 Lines(105 Words)");
+        level25.setText("Level 25 : 6 Lines(105 Words)");
         level25.setBounds(70,316,270,30);
         
         
@@ -685,7 +691,7 @@ public class Levels1 {
         level26 = new JLabel();
         level26.setFont(new Font("arial",Font.PLAIN,20));
         level26.setForeground(Color.WHITE);
-        level26.setText("Level 26 :  Lines( Words)");
+        level26.setText("Level 26 : 7 Lines(146 Words)");
         level26.setBounds(70,376,270,30);
         
         open26 = new JButton();
@@ -704,7 +710,7 @@ public class Levels1 {
         level27 = new JLabel();
         level27.setFont(new Font("arial",Font.PLAIN,20));
         level27.setForeground(Color.WHITE);
-        level27.setText("Level 27 :  Lines( Words)");
+        level27.setText("Level 27 : 7 Lines(143 Words)");
         level27.setBounds(70,436,270,30);
         
         open27 = new JButton();
@@ -723,7 +729,7 @@ public class Levels1 {
         level28 = new JLabel();
         level28.setFont(new Font("arial",Font.PLAIN,20));
         level28.setForeground(Color.WHITE);
-        level28.setText("Level 28 :  Lines(Words)");
+        level28.setText("Level 28 : 7 Lines(145 Words)");
         level28.setBounds(70,496,270,30);
         
         open28 = new JButton();
@@ -742,7 +748,7 @@ public class Levels1 {
         level29 = new JLabel();
         level29.setFont(new Font("arial",Font.PLAIN,20));
         level29.setForeground(Color.WHITE);
-        level29.setText("Level 29 :  Lines( Words)");
+        level29.setText("Level 29 : 7 Lines(125 Words)");
         level29.setBounds(70,556,270,30);
         
         
@@ -762,7 +768,7 @@ public class Levels1 {
         level30 = new JLabel();
         level30.setFont(new Font("arial",Font.PLAIN,20));
         level30.setForeground(Color.WHITE);
-        level30.setText("Level 30 :  Lines( Words)");
+        level30.setText("Level 30 : 7 Lines(150 Words)");
         level30.setBounds(70,616,270,30);
         
         
@@ -777,6 +783,217 @@ public class Levels1 {
         //Level 30 Configuration Ends here.................
         
         
+        //Intermdiate - II Configuration Starts Here........
+        
+        intermediateLevel2 = new JLabel();
+        intermediateLevel2.setFont(new Font("arial",Font.PLAIN,20));
+        intermediateLevel2.setForeground(Color.WHITE);
+        intermediateLevel2.setIcon(intermediateStar);
+        intermediateLevel2.setText("Intermediate - II");
+        intermediateLevel2.setBounds(70,26,280,30);
+        
+                
+        //Level 31 Configuration Starts here........
+        
+        level31 = new JLabel();
+        level31.setFont(new Font("arial",Font.PLAIN,20));
+        level31.setForeground(Color.WHITE);
+        level31.setText("Level 31 : 8 Lines(162 Words)");
+        level31.setBounds(70,76,270,30);
+        
+        
+        open31 = new JButton();
+        open31.setFont(new Font("arial",Font.PLAIN,20));
+        open31.setBackground(Color.GRAY);
+        open31.setForeground(Color.WHITE);
+        open31.setIcon(play);
+        open31.setText("Open Playground");
+        open31.setBounds(1039,76,190,30);
+        
+        //Level 31 Configuration Ends here.......
+        
+        
+        //Level 32 Configuration Starts here..........
+        
+        level32 = new JLabel();
+        level32.setFont(new Font("arial",Font.PLAIN,20));
+        level32.setForeground(Color.WHITE);
+        level32.setText("Level 32 : 8 Lines(169 Words)");
+        level32.setBounds(70,136,270,30);
+        
+        
+        open32 = new JButton();
+        open32.setFont(new Font("arial",Font.PLAIN,20));
+        open32.setBackground(Color.GRAY);
+        open32.setForeground(Color.WHITE);
+        open32.setIcon(play);
+        open32.setText("Open Playground");
+        open32.setBounds(1039,136,190,30);
+        
+        //Level 32 Configuration Ends here..........
+        
+        
+        //Level 33 Configuration Starts here........
+        
+        level33 = new JLabel();
+        level33.setFont(new Font("arial",Font.PLAIN,20));
+        level33.setForeground(Color.WHITE);
+        level33.setText("Level 33 : 8 Lines(127 Words)");
+        level33.setBounds(70,196,270,30);
+        
+        
+        open33 = new JButton();
+        open33.setFont(new Font("arial",Font.PLAIN,20));
+        open33.setBackground(Color.GRAY);
+        open33.setForeground(Color.WHITE);
+        open33.setIcon(play);
+        open33.setText("Open Playground");
+        open33.setBounds(1039,196,190,30);
+        
+        //Level 33 Configuration Ends here..........
+        
+        
+        //Level 34 Configuration Starts Here..............
+        
+        level34 = new JLabel();
+        level34.setFont(new Font("arial",Font.PLAIN,20));
+        level34.setForeground(Color.WHITE);
+        level34.setText("Level 34 : 8 Lines(137 Words)");
+        level34.setBounds(70,256,270,30);
+        
+        
+        open34 = new JButton();
+        open34.setFont(new Font("arial",Font.PLAIN,20));
+        open34.setBackground(Color.GRAY);
+        open34.setForeground(Color.WHITE);
+        open34.setIcon(play);
+        open34.setText("Open Playground");
+        open34.setBounds(1039,256,190,30);
+        
+        //Level 34 Configuration Ends Here...................
+        
+        
+        //Level 35 Configuration Starts Here.................
+        
+        level35 = new JLabel();
+        level35.setFont(new Font("arial",Font.PLAIN,20));
+        level35.setForeground(Color.WHITE);
+        level35.setText("Level 35 : 8 Lines(142 Words)");
+        level35.setBounds(70,316,270,30);
+        
+        
+        open35 = new JButton();
+        open35.setFont(new Font("arial",Font.PLAIN,20));
+        open35.setBackground(Color.GRAY);
+        open35.setForeground(Color.WHITE);
+        open35.setIcon(play);
+        open35.setText("Open Playground");
+        open35.setBounds(1039,316,190,30);
+        
+        //Level 35 Configuration Ends Here.................
+        
+        
+        
+        //Level 36 Configuration Starts Here...............
+        
+        level36 = new JLabel();
+        level36.setFont(new Font("arial",Font.PLAIN,20));
+        level36.setForeground(Color.WHITE);
+        level36.setText("Level 36 : 9 Lines(161 Words)");
+        level36.setBounds(70,376,270,30);
+        
+        open36 = new JButton();
+        open36.setFont(new Font("arial",Font.PLAIN,20));
+        open36.setBackground(Color.GRAY);
+        open36.setForeground(Color.WHITE);
+        open36.setIcon(play);
+        open36.setText("Open Playground");
+        open36.setBounds(1039,376,190,30);
+        
+        //Level 36 Configuration Ends here..................
+        
+        
+        //Level 37 Configuration Starts Here...................
+        
+        level37 = new JLabel();
+        level37.setFont(new Font("arial",Font.PLAIN,20));
+        level37.setForeground(Color.WHITE);
+        level37.setText("Level 37 : 9 Lines(162 Words)");
+        level37.setBounds(70,436,270,30);
+        
+        open37 = new JButton();
+        open37.setFont(new Font("arial",Font.PLAIN,20));
+        open37.setBackground(Color.GRAY);
+        open37.setForeground(Color.WHITE);
+        open37.setIcon(play);
+        open37.setText("Open Playground");
+        open37.setBounds(1039,436,190,30);
+        
+        //Level 37 Configurtion Ends Here...................
+        
+        
+        //Level 38 Configuration Starts Here...............
+        
+        level38 = new JLabel();
+        level38.setFont(new Font("arial",Font.PLAIN,20));
+        level38.setForeground(Color.WHITE);
+        level38.setText("Level 38 : 9 Lines(155 Words)");
+        level38.setBounds(70,496,270,30);
+        
+        open38 = new JButton();
+        open38.setFont(new Font("arial",Font.PLAIN,20));
+        open38.setBackground(Color.GRAY);
+        open38.setForeground(Color.WHITE);
+        open38.setIcon(play);
+        open38.setText("Open Playground");
+        open38.setBounds(1039,496,190,30);
+        
+        //Level 38 Configuration Ends Here.............
+        
+        
+        //Level 39 Configuration Starts Here..............
+        
+        level39 = new JLabel();
+        level39.setFont(new Font("arial",Font.PLAIN,20));
+        level39.setForeground(Color.WHITE);
+        level39.setText("Level 39 : 9 Lines(157 Words)");
+        level39.setBounds(70,556,270,30);
+        
+        open39 = new JButton();
+        open39.setFont(new Font("arial",Font.PLAIN,20));
+        open39.setBackground(Color.GRAY);
+        open39.setForeground(Color.WHITE);
+        open39.setIcon(play);
+        open39.setText("Open Playground");
+        open39.setBounds(1039,556,190,30);
+        
+        //Level 39 Configuration Ends Here...............
+        
+       
+       //Level 40 Configuration Starts Here.......
+       
+       level40 = new JLabel();
+       level40.setFont(new Font("arial",Font.PLAIN,20));
+       level40.setBackground(Color.GRAY);
+       level40.setForeground(Color.WHITE);
+       level40.setText("Level 40 : 9 Lines(156 Words)");
+       level40.setBounds(70,616,270,30);
+       
+       open40 = new JButton();
+       open40.setFont(new Font("arial",Font.PLAIN,20));
+       open40.setBackground(Color.GRAY);
+       open40.setForeground(Color.WHITE);
+       open40.setIcon(play);
+       open40.setText("Open Playground");
+       open40.setBounds(1039,616,190,30);
+       
+       //Level 40 Configuration Ends Here...............
+       
+        
+        
+       //Level 41 Configuration Starts Here................
+       
+    
         
         
         
@@ -806,13 +1023,169 @@ public class Levels1 {
         
         
         
-
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
         
         tabbedPane = new JTabbedPane();
         tabbedPane.setBounds(0,0,1456,800);
@@ -941,6 +1314,27 @@ public class Levels1 {
         intermediate2.setLayout(null);
         intermediate2.setBackground(Color.GRAY);
         intermediate2.add(coordinations4);
+        intermediate2.add(intermediateLevel2);
+        intermediate2.add(level31);
+        intermediate2.add(open31);
+        intermediate2.add(level32);
+        intermediate2.add(open32);
+        intermediate2.add(level33);
+        intermediate2.add(open33);
+        intermediate2.add(level34);
+        intermediate2.add(open34);
+        intermediate2.add(level35);
+        intermediate2.add(open35);
+        intermediate2.add(level36);
+        intermediate2.add(open36);
+        intermediate2.add(level37);
+        intermediate2.add(open37);
+        intermediate2.add(level38);
+        intermediate2.add(open38);
+        intermediate2.add(level39);
+        intermediate2.add(open39);
+        intermediate2.add(level40);
+        intermediate2.add(open40);
         tabbedPane.add("Intermediate - II", intermediate2);
         
         expertise1 = new JPanel();
@@ -1495,7 +1889,7 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level20 = "From that day forward, Leo, Ethan, Liam, Noah, and Oliver embarked on a shared journey, safeguarding the grassland and all its inhabitants. Each cow, with his unique strengths and gentle nature, contributed to the collective harmony of their newfound herd. Ethan's resourcefulness, Liam's nurturing spirit, Noah's unwavering bravery, and Oliver's keen intuition blended seamlessly with Leo's regal leadership. Together, they created a sanctuary where friendship flourished, inspiring others with their unwavering unity and determination to protect and preserve the beauty of their shared home.";
+                   String level20 = "From that day forward, Leo, Ethan, Liam, Noah, and Oliver embarked on a shared journey, safeguarding the grassland and all its inhabitants. Each cow, with his unique strengths and gentle nature, contributed to the collective harmony of their newfound herd. Ethan's resourcefulness, Liam's nurturing spirit, Noah's unwavering bravery, and Oliver's keen intuition blended seamlessly with Leo's regal leadership.Together, they created a sanctuary where friendship flourished, inspiring others with their unwavering unity and determination to protect and preserve the beauty of their shared home.";
                    
                    Key_Master1.canvas.setText(level20);
                    Key_Master1.canvas.addKeyListener(w);
@@ -1524,9 +1918,9 @@ public class Levels1 {
                   Working w = new Working();
                   w.key = key;
                   
-                  String level21 = "Abishek - I";
+                  StringBuffer level21 = new StringBuffer("Positive thinking is a powerful mindset that can have a profound impact on our lives. When we consciously choose to focus on the positive aspects of our experiences, we invite more joy, gratitude, and contentment into our daily lives. It involves cultivating an optimistic outlook, embracing a constructive mindset, and approaching challenges with a sense of possibility and growth. By adopting positive thinking, we open ourselves up to a world of opportunities and set the stage for personal transformation and fulfillment.Positive thinking is not about ignoring or denying the existence of problems or difficulties. Instead, it is about acknowledging them and choosing to direct our attention towards solutions and the potential for positive outcomes.");
                   
-                  Key_Master1.canvas.setText(level21);
+                  Key_Master1.canvas.setText(level21.toString());
                   Key_Master1.canvas.addKeyListener(w);
                   w.processQuestion(Key_Master1.canvas.getText());
                   Key_Master1.submit.addActionListener(w);
@@ -1549,9 +1943,9 @@ public class Levels1 {
                       Working w = new Working();
                       w.key = key;
                       
-                      String level22 = "Abishek - II";
+                      StringBuffer level22 = new StringBuffer("One of the remarkable benefits of positive thinking is its ability to help us develop resilience and bounce back from setbacks. When faced with obstacles or failure, positive thinking allows us to view them as temporary setbacks rather than insurmountable roadblocks. It empowers us to learn from our mistakes, adapt our strategies, and persist in the pursuit of our goals. With a positive mindset, we can transform adversity into opportunities for personal growth, self-improvement, and ultimately, success. By cultivating a positive mindset, we develop the mental fortitude to overcome challenges and setbacks. We are less likely to dwell on the negative aspects of a situation and more inclined to focus on finding solutions and alternative paths forward. Positive thinking enables us to maintain a sense of optimism and determination.");
                       
-                      Key_Master1.canvas.setText(level22);
+                      Key_Master1.canvas.setText(level22.toString());
                       Key_Master1.canvas.addKeyListener(w);
                       w.processQuestion(Key_Master1.canvas.getText());
                       Key_Master1.submit.addActionListener(w);
@@ -1573,9 +1967,9 @@ public class Levels1 {
                       Working w = new Working();
                       w.key = key;
                       
-                      String level23 = "Abishek - III";
+                      StringBuffer level23 = new StringBuffer("In addition to resilience, positive thinking greatly enhances our overall psychological and emotional well-being. When we intentionally direct our attention to the positive aspects of life, we reduce stress, anxiety, and negative thought patterns. By focusing on the good, we invite more happiness, contentment, and inner peace into our lives. Positive thinking allows us to appreciate the beauty around us, find joy in the simple pleasures, and cultivate a sense of gratitude for the blessings we have. When we practice positive thinking, we shift our perspective from dwelling on what is lacking or going wrong to appreciating what is going well in our lives. This shift in focus enables us to experience greater satisfaction and fulfillment. By acknowledging and celebrating the positive aspects of our lives.");
                       
-                      Key_Master1.canvas.setText(level23);
+                      Key_Master1.canvas.setText(level23.toString());
                       Key_Master1.canvas.addKeyListener(w);
                       w.processQuestion(Key_Master1.canvas.getText());
                       Key_Master1.submit.addActionListener(w);
@@ -1597,9 +1991,9 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level24 = "Abishek - IV";
+                   StringBuffer level24 = new StringBuffer("Furthermore, positive thinking strengthens our relationships and fosters deeper connections with others. When we approach interactions with a positive mindset, we create an environment of trust, empathy, and understanding. We become better listeners, more compassionate companions, and supportive friends. By maintaining a positive attitude, we inspire and uplift those around us, spreading positivity and kindness in our interactions. Positive thinking not only enriches our own lives but also has a ripple effect, positively influencing the lives of those we come in contact with.When we embody positive thinking in our relationships, we create a safe and nurturing space for open communication and connection. Our positive energy and attitude can inspire others to adopt a similar mindset.");
                    
-                   Key_Master1.canvas.setText(level24);
+                   Key_Master1.canvas.setText(level24.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1621,9 +2015,9 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level25 = "Abishek - V";
+                   StringBuffer level25 = new StringBuffer("Moreover, positive thinking enhances our problem-solving skills and empowers us to overcome challenges effectively. With a positive mindset, we approach problems with optimism, creativity, and a solution-oriented mindset. Instead of getting stuck in negativity or feeling overwhelmed by obstacles, we focus on finding solutions and exploring alternative approaches. Positive thinking opens our minds to new possibilities, encourages innovative thinking, and helps us navigate through difficulties with a sense of confidence and determination. When we approach problem-solving with a positive mindset, we are more likely to discover creative solutions and make progress towards our goals. Positive thinking allows us to maintain a clear and focused perspective.");
                    
-                   Key_Master1.canvas.setText(level25);
+                   Key_Master1.canvas.setText(level25.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1646,9 +2040,9 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level26 = "Abishek - VI";
+                   StringBuffer level26 = new StringBuffer("Effective time management is an indispensable and transformative skill that plays a pivotal role in optimizing the trajectory of our daily lives. It involves purposefully strategizing, meticulously coordinating, and seamlessly integrating our diverse endeavors to extract the utmost value from the finite and precious resource that is time. By cultivating and honing our proficiency in the art of time management, we can substantially elevate our productivity levels, mitigate the weighty burden of stress, and forge a harmonious equilibrium between the multifaceted tapestry of our personal and professional responsibilities. Embracing the tenets of effective time management endows us with the empowering ability to assume an authoritative stance over the ticking hands of the clock, ensconcing ourselves in the driving seat of our own destinies. By wielding this newfound power, we ensure that our time is judiciously allocated to the pursuits that hold the highest resonance and transformative.");
                    
-                   Key_Master1.canvas.setText(level26);
+                   Key_Master1.canvas.setText(level26.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1669,9 +2063,9 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level27 = "Abishek - VII";
+                   StringBuffer level27 = new StringBuffer("The benefits of adept time management extend far beyond the mere boundaries of productivity and efficiency, permeating various facets of our lives with a transformative touch. By skillfully managing our time, we liberate ourselves from the clutches of procrastination, unfettering our potential to steadfastly steer towards our goals and priorities. This propels us towards making well-informed decisions, optimizing resource allocation, and gracefully meeting deadlines without succumbing to the overwhelming weight of pressure. Furthermore, the art of time management bestows upon us the invaluable gift of order and command over the intricacies of our existence, ushering in a profound sense of serenity and tranquility. As stress dissipates, we are able to bask in the profound peace of mind that arises from orchestrating our days with meticulous care. Moreover, time management acts as a catalyst for holistic well-being, gifting us with ample opportunities for self-care.");
                    
-                   Key_Master1.canvas.setText(level27);
+                   Key_Master1.canvas.setText(level27.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1693,9 +2087,9 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level28 = "Abishek - VII";
+                   StringBuffer level28 = new StringBuffer("To enhance our prowess in time management, it is imperative to harness a diverse array of strategies that can propel us towards optimal efficiency. Foremost among these is the act of setting clear, well-defined goals and priorities that serve as our guiding beacons amidst the vast sea of tasks and responsibilities. By discerning the true essence of what holds genuine significance to us, we are empowered to allocate our most precious resource - time - with wisdom and precision. Employing the aid of meticulously crafted schedules or comprehensive to-do lists allows us to tread the path of organization, safeguarding us against the perils of aimless wandering and ensuring that we remain firmly anchored to our objectives. Simultaneously, eradicating distractions and erecting sturdy boundaries becomes a necessity, for it is through these fortifications that we can harness the remarkable power of unwavering focus and undiluted concentration.");
                    
-                   Key_Master1.canvas.setText(level28);
+                   Key_Master1.canvas.setText(level28.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1715,9 +2109,9 @@ public class Levels1 {
                    Working w = new Working();
                    w.key = key;
                    
-                   String level29 = "Abishek - XI";
+                   StringBuffer level29 = new StringBuffer("While time management holds immense potential for personal growth and accomplishment, it is not without its fair share of obstacles. One recurring challenge is the all-too-familiar inclination to shoulder an excessive load of responsibilities, thereby unwittingly subjecting ourselves to the clutches of overwhelm and the arduous task of prioritization. Cultivating the art of uttering a resolute \"no\" and setting realistic expectations emerge as pivotal skills to triumph over this formidable challenge. Equally daunting is the perennial adversary known as procrastination, which stealthily undermines our best intentions and sabotages our time management endeavors. Conquering this formidable foe necessitates the cultivation of unwavering self-discipline, as well as breaking down complex tasks into bite-sized, manageable steps that are easier to tackle. Additionally, harnessing the power of time-blocking techniques.");
                    
-                   Key_Master1.canvas.setText(level29);
+                   Key_Master1.canvas.setText(level29.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1738,10 +2132,10 @@ public class Levels1 {
                    key = new Key_Master1();
                    Working w = new Working();
                    w.key = key;
+                
+                   StringBuffer level30 = new StringBuffer("In essence, the art of time management unveils a world of possibilities, offering us the key to unlock the treasures hidden within the fleeting moments of our lives. As we bid farewell to the shackles of disorganization and embrace the empowering embrace of efficient time management, we embark on a journey towards enhanced productivity, heightened well-being, and unparalleled fulfillment. With each deliberate choice and calculated allocation of our time, we weave the tapestry of a life that resonates with our deepest values and aspirations. Let us cherish the significance of time, for it is the currency through which we mold our destiny. With a steadfast commitment to effective time management, we embrace the boundless potential that lies within us, propelling ourselves towards a future with accomplishment, purpose, and an enduring sense of fulfillment. So, dear friends, let us seize the reins of time and embark on this transformative voyage together.");
                    
-                   String level30 = "Abishek - X";
-                   
-                   Key_Master1.canvas.setText(level30);
+                   Key_Master1.canvas.setText(level30.toString());
                    Key_Master1.canvas.addKeyListener(w);
                    w.processQuestion(Key_Master1.canvas.getText());
                    Key_Master1.submit.addActionListener(w);
@@ -1752,6 +2146,274 @@ public class Levels1 {
            }
        });
    }
+   
+   //Intermediate - I Configuration Ends Here.........
+   
+   
+   //Intermediate - II Configuration Starts Here.....................
+   
+   public void openPlayground31(){    // Level 31 - Level 35 : "The Impact of climate change".
+       open31.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+               key = new Key_Master1();
+               Working w = new Working();
+               w.key = key;
+               
+               StringBuffer level31 = new StringBuffer("Climate change, a pressing global issue, has been a topic of concern for scientists, policymakers, and individuals alike. It refers to the long-term alteration of temperature and typical weather patterns in different regions of the world. This alteration is primarily attributed to human activities, particularly the burning of fossil fuels, deforestation, and industrial processes that release greenhouse gases into the atmosphere. The consequences of climate change are wide-ranging and encompass various aspects of our planet, including the environment."+"\n"+"The primary driver of climate change is the excessive emission of greenhouse gases, such as carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O). These gases trap heat in the Earth's atmosphere, leading to a phenomenon known as the greenhouse effect. As a result, the Earth's surface and lower atmosphere experience a gradual increase in temperature, referred to as global warming. This warming trend has been observed over the past century and is expected to continue unless significant actions are taken to reduce greenhouse emissions.");
+               
+               Key_Master1.canvas.setText(level31.toString());
+               Key_Master1.canvas.addKeyListener(w);
+               w.processQuestion(Key_Master1.canvas.getText());
+               Key_Master1.submit.addActionListener(w);
+           }
+           catch(Exception detect){
+               System.out.println(detect);
+           }
+           }  
+       });
+   }
+   
+   
+   
+   public void openPlayground32(){
+       open32.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuffer level32 = new StringBuffer("One of the most impacts of climate change is the increase in extreme weather events. Heatwaves, droughts, hurricanes, and heavy rainfall are becoming more frequent and intense in many parts of the world. These events not only cause immediate devastation, but also have long-term consequences for ecosystems, agriculture, and human settlements. For instance, prolonged droughts can lead to water scarcity, crop failures, and food insecurity, while intense storms and flooding can result in property damage, displacement of communities, and loss of life."+"\n"+"The melting of polar ice caps and glaciers is another profound consequence of climate change. The Arctic region, in particular, is experiencing rapid ice loss, leading to rising sea levels. This poses a significant threat to low-lying coastal areas and small island nations, increasing the risk of flooding and coastal erosion. Furthermore, the loss of ice reduces the Earth's reflectivity, amplifying the warming effect and creating a feedback loop that accelerates climate change. The impacts of melting ice are not limited to sea-level rise; they also disrupt ecosystems.");
+                   
+                   Key_Master1.canvas.setText(level32.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+   });
+   
+   }
+   
+   
+   public void openPlayground33(){
+       open33.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuffer level33 = new StringBuffer("Climate change also has far-reaching implications for ecosystems and biodiversity. As temperatures rise and weather patterns shift, many species struggle to adapt to the new conditions. This can result in changes in migration patterns, altered breeding seasons, and shifts in the distribution of plant and animal species. Ecosystems that have evolved over millennia are now being disrupted, leading to a loss of biodiversity and ecological imbalance."+"\n"+"The consequences of climate change are not limited to the natural world; they also have significant social and economic impacts. Vulnerable communities, particularly those in developing countries, are disproportionately affected by climate change. Limited access to resources, inadequate infrastructure, and a high dependence on climate-sensitive sectors such as agriculture make these communities more susceptible to the adverse effects of changing weather patterns.");
+                   
+                   Key_Master1.canvas.setText(level33.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);      
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   public void openPlayground34(){
+       open34.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuffer level34 = new StringBuffer("The economic implications of climate change are substantial. Damage to infrastructure, agricultural losses, increased healthcare costs, and the need for adaptation measures all pose financial burdens on societies. Moreover, the potential disruption of global supply chains and the increased frequency of extreme weather events can have ripple effects on the global economy. Addressing climate change requires substantial investments in renewable energy, sustainable infrastructure, and resilient systems."+"\n"+"Recognizing the urgency of the issue, global efforts to address climate change have gained momentum in recent years. The Paris Agreement, adopted in 2015, is a landmark international agreement aimed at limiting global warming to well below 2 degrees Celsius above pre-industrial levels. It calls for collective action from countries to reduce greenhouse gas emissions, enhance climate resilience, and provide support to developing countries in their climate change adaptation and mitigation efforts.");
+                   
+                   Key_Master1.canvas.setText(level34.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   
+   public void openPlayground35(){
+       open35.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuffer level35 = new StringBuffer("Individual actions also play a crucial role in combating climate change. Making sustainable choices in our daily lives, such as reducing energy consumption, using public transportation, and adopting environmentally friendly practices, can contribute to mitigating climate change. Education and awareness-raising campaigns are essential to empower individuals and communities to take action and make informed decisions. Addressing climate change requires collective efforts, international cooperation, and individual actions."+"\n"+"In conclusion, climate change is a multifaceted and urgent global issue with wide-ranging consequences. It affects the environment, ecosystems, human societies, and the global economy. The primary driver of climate change is the excessive emission of greenhouse gases, resulting from human activities. The impacts of climate change include increased frequency and intensity of extreme weather events, melting ice caps and rising sea levels, and economic challenges. create a more resilient and sustainable future for generations to come.");
+                   
+                   Key_Master1.canvas.setText(level35.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   
+   public void openPlayground36(){             //Level 36 - Level 40 : "Data Entry and Accuracy in Typing".
+       open36.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+               key = new Key_Master1();
+               Working w = new Working();
+               w.key = key;
+               
+               StringBuffer level36 = new StringBuffer("Data entry is a crucial aspect of information management, where accurate and efficient typing plays a pivotal role. The meticulous task of inputting data requires precision, attention to detail, and adherence to established standards. Data integrity and accuracy are of paramount importance in this process, as errors can have far-reaching consequences in decision-making, analysis, and overall data quality. Let us delve into the realm of data entry and explore the significance of accuracy in typing, along with the strategies and techniques employed to ensure reliable and error-free data input."+"\n"+"In the realm of data entry, precision and accuracy are indispensable. Each keystroke and character input must align with the intended information, reflecting a commitment to maintaining the integrity of the data. This entails a methodical approach to typing, whereby attention to detail is paramount. Practitioners of data entry must possess a keen eye for inconsistencies, typographical errors, and formatting irregularities, ensuring that the entered data adheres to the established conventions and requirements.");
+               
+               Key_Master1.canvas.setText(level36.toString());
+               Key_Master1.canvas.addKeyListener(w);
+               w.processQuestion(Key_Master1.canvas.getText());
+              Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+               
+   public void openPlayground37(){
+       open37.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  StringBuffer level37 = new StringBuffer("To achieve optimal accuracy, it is essential to cultivate a range of strategies and techniques. Touch typing, a method where typists rely on muscle memory rather than visual cues, can significantly enhance typing speed and accuracy. By training fingers to automatically find the correct keys, touch typists minimize errors and achieve a seamless flow of data entry. Furthermore, the use of keyboard shortcuts and hotkeys can expedite the typing process, reducing the likelihood of errors caused by manual input. Maintaining accuracy in data entry also necessitates an understanding of the data being entered."+"\n"+"This knowledge empowers data entry professionals to exercise critical thinking and judgment, ensuring the accuracy and reliability of the entered information.Another critical aspect of accurate data entry is the utilization of validation and verification techniques. Validating data entry involves verifying the accuracy and completeness of entered information by cross-referencing it with source documents or databases. This process helps identify discrepancies or inaccuracies that may have occurred during the typing process.");
+                  
+                  Key_Master1.canvas.setText(level37.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          }
+       });
+   }
+   
+   
+   
+   public void openPlayground38(){
+       open38.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  StringBuffer level38 = new StringBuffer("Additionally, employing data validation rules and algorithms can help detect errors or inconsistencies in real-time, providing immediate feedback to the typist and facilitating prompt correction. In the pursuit of accuracy, typists must also be mindful of their typing environment and ergonomic practices. Ergonomics plays a vital role in ensuring accuracy and the well-being of data entry professionals. A comfortable and well-designed workstation, with proper keyboard placement and wrist support, promotes good posture and minimizes fatigue and discomfort. Typists should also take regular breaks and do exercises to prevent repetitive strain injuries and maintain focus and concentration."+"\n"+"The significance of accuracy in data entry extends beyond individual tasks. Inaccurate or erroneous data can compromise the integrity of databases, analytics, and decision-making processes. It can lead to faulty conclusions, flawed reports, and misguided strategies. Organizations that rely on accurate data for operational, financial, or regulatory purposes must prioritize accuracy in data entry to maintain trust, efficiency, and compliance.");
+                  
+                  Key_Master1.canvas.setText(level38.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          } 
+       });
+   }
+   
+   
+   
+   public void openPlayground39(){
+       open39.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuffer level39 = new StringBuffer("Maintaining accuracy in data entry is not only crucial for individual tasks but also for the overall integrity of databases, analytics, and decision-making processes within organizations. Inaccurate or erroneous data can have far-reaching consequences, leading to faulty conclusions, flawed reports, and misguided strategies. For instance, financial institutions rely on accurate data for regulatory reporting and risk analysis, where even a minor error can result in severe consequences. Similarly, healthcare organizations depend on accurate data for patient records and medical research, where mistakes can compromise patient care and scientific validity."+"\n"+"To ensure accuracy in data entry, organizations must establish robust quality control measures. This includes implementing data validation checks, conducting regular audits, and providing training and feedback to data entry professionals. Validating data entry involves cross-checking the entered information against source documents or databases to identify discrepancies or inaccuracies. By incorporating automated validation rules and algorithms, organizations can streamline this process and minimize the risk of errors slipping through.");
+                   
+                   Key_Master1.canvas.setText(level39.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   public void openPlayground40(){
+       open40.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuffer level40 = new StringBuffer("Moreover, organizations should prioritize data governance practices to ensure accurate and reliable data entry. Data governance encompasses the policies, procedures, and controls that govern the management of data within an organization. By establishing clear guidelines and standards for data entry, organizations can promote consistency, accuracy, and accountability. This involves defining data entry procedures, specifying data formats and conventions, and implementing data quality monitoring mechanisms.In addition to organizational efforts, data entry professionals should be encouraged to continuously improve their skills and stay updated with their skills."+"\n"+"In conclusion, accuracy in data entry is vital for ensuring the reliability and usefulness of data within organizations. Inaccurate data can lead to faulty decision-making, compromised reporting, and potential risks for various industries. By implementing quality control measures, establishing data governance practices, and providing ongoing training and support to data entry professionals, organizations can enhance accuracy in data entry and maintain the integrity of their data assets and drive through successful outcomes.");
+                   
+                   Key_Master1.canvas.setText(level40.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
    
     public static void main(String[] args) throws Exception{
@@ -1787,6 +2449,16 @@ public class Levels1 {
         lev1.openPlayground28();
         lev1.openPlayground29();
         lev1.openPlayground30();
+        lev1.openPlayground31();
+        lev1.openPlayground32();
+        lev1.openPlayground33();
+        lev1.openPlayground34();
+        lev1.openPlayground35();
+        lev1.openPlayground36();
+        lev1.openPlayground37();
+        lev1.openPlayground38();
+        lev1.openPlayground39();
+        lev1.openPlayground40();
     }
     
     
