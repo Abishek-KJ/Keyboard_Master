@@ -15,21 +15,28 @@ import javax.swing.JPanel;
 import javax.swing.ImageIcon;
 import java.awt.Toolkit;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Image;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.ActionListener;
+import java.awt.Rectangle;
+import java.lang.StringBuffer;
+import java.lang.StringBuilder;
 import javax.swing.UIManager;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
+//import javax.swing.JOptionPane.INFORMATION_MESSAGE;
+import javax.swing.JOptionPane;
 
-
-public class Levels1 {
+public class Levels1 implements AboutTheSoftware {
     
     public Key_Master1 key;
+    
+    public Working w;
     
     JFrame frame;
     JTabbedPane tabbedPane;
@@ -77,6 +84,39 @@ public class Levels1 {
     
     
     
+    //Expertise - I variable declaration starts here..................
+    
+    JLabel expertiseLevelOne;
+    JLabel expertiseLevel1;
+    JLabel level41, level42, level43, level44, level45, level46, level47, level48, level49, level50;
+    JButton open41, open42, open43, open44, open45, open46, open47, open48, open49, open50;
+    
+    //Expertise - I variable declaration ends here.......................
+    
+    
+    
+    //Expertise - II variable declaration starts here........................
+    
+    JLabel expertiseLevelTwo;
+    JLabel expertiseLevel2;
+    JLabel level51, level52, level53, level54, level55, level56, level57, level58, level59, level60;
+    JButton open51, open52, open53, open54, open55, open56, open57, open58, open59, open60;
+    Font font;
+    
+    //Expertise - II variable declaration ends here...........................
+    
+    
+    //About the software variable declaration starts here...........................
+    
+    JButton aboutTheSoftware[]; 
+    ImageIcon information;
+    JLabel aboutTheSoftware[];
+    JFrame about;
+    
+    
+    //JButton[] aboutTheSoftware;
+    
+   
     
     
     
@@ -88,7 +128,9 @@ public class Levels1 {
         frame.setSize(1450,800);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setResizable(false);
+        //frame.setUndecorated(true);
         frame.setLocationRelativeTo(null);
+        //frame.setAlwaysOnTop(false);
         frame.getContentPane().setBackground(Color.GRAY);
         frame.setLayout(null);
         
@@ -563,11 +605,12 @@ public class Levels1 {
         
         //Beginner - II Configuration Ends Here........
         
+        
+        
+        //Intermediate - I Configuration starts here..............
+        
         intermediateStar = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Twostars.png");
         
-        
-        
-        //Intermediate - I Configuration Starts Here.....
         
         intermediateLevel1 = new JLabel();
         intermediateLevel1.setIcon(intermediateStar);
@@ -782,6 +825,10 @@ public class Levels1 {
         
         //Level 30 Configuration Ends here.................
         
+        //Intermediate - I Configuration ends here.............
+        
+        
+        
         
         //Intermdiate - II Configuration Starts Here........
         
@@ -989,12 +1036,623 @@ public class Levels1 {
        
        //Level 40 Configuration Ends Here...............
        
-        
-        
+      //Intermediate - II Configuration ends here...........
+      
+      
+      //Expertise - I Configuration Starts Here..................
+      
+      /*expertiseLevelOne = new JLabel();
+      expertiseLevelOne.setFont(new Font("arial",Font.PLAIN,20));
+      expertiseLevelOne.setForeground(Color.WHITE);
+      expertiseLevelOne.setIcon(beginnerStar);
+      expertiseLevelOne.setText("Expertise - I");*/
+      
+      
+      
+      expertiseLevel1 = new JLabel();
+      expertiseLevel1.setFont(new Font("arial",Font.PLAIN,20));
+      expertiseLevel1.setForeground(Color.WHITE);
+      expertiseLevel1.setIcon(intermediateStar);
+     // expertiseLevel1.setText("Expertise - I");
+      expertiseLevel1.setBounds(70,26,80,30);
+      
+      expertiseLevelOne = new JLabel();
+      expertiseLevelOne.setFont(new Font("arial",Font.PLAIN,20));
+      expertiseLevelOne.setForeground(Color.WHITE);
+      expertiseLevelOne.setIcon(beginnerStar);
+      expertiseLevelOne.setText("Expertise - I");
+      Rectangle expertiseLevelOneBounds = new Rectangle(133,26,280,30);
+      expertiseLevelOne.setBounds(expertiseLevelOneBounds);
+      
+      
+      
+      
        //Level 41 Configuration Starts Here................
        
+       level41 = new JLabel();
+       level41.setFont(new Font("arial",Font.PLAIN,20));
+       level41.setForeground(Color.WHITE);
+       level41.setText("Level 41 : 10 Lines(169 Words)");
+       level41.setBounds(70,76,300,30);
+       
+       
+       open41 = new JButton();
+       open41.setFont(new Font("arial",Font.PLAIN,20));
+       open41.setBackground(Color.GRAY);
+       open41.setForeground(Color.WHITE);
+       open41.setIcon(play);
+       open41.setText("Open Playground");
+       open41.setBounds(1039,76,190,30);
+       
     
-        
+      //Level 41 Configuration ends here................
+      
+      
+      //Level 42 Configuration starts here.................
+      
+      level42 = new JLabel();
+      level42.setFont(new Font("arial",Font.PLAIN,20));
+      level42.setForeground(Color.WHITE);
+      level42.setText("Level 42 : 10 Lines(168 Words)");
+      level42.setBounds(70,136,300,30);
+      
+      
+      open42 = new JButton();
+      open42.setFont(new Font("arial",Font.PLAIN,20));
+      open42.setBackground(Color.GRAY);
+      open42.setForeground(Color.WHITE);
+      open42.setIcon(play);
+      open42.setText("Open Playground");
+      open42.setBounds(1039,136,190,30);
+      
+      //Level 42 Configuration ends here.............................
+      
+      
+      //Level 43 Configuration starts here..............................
+      
+      level43 = new JLabel();
+      level43.setFont(new Font("arial",Font.PLAIN,20));
+      level43.setForeground(Color.WHITE);
+      level43.setText("Level 43 : 10 Lines(168 Words)");
+      level43.setBounds(70,196,300,30);
+      
+      
+      open43 = new JButton();
+      open43.setFont(new Font("arial",Font.PLAIN,20));
+      open43.setBackground(Color.GRAY);
+      open43.setForeground(Color.WHITE);
+      open43.setIcon(play);
+      open43.setText("Open Playground");
+      open43.setBounds(1039,196,190,30);
+      
+      //Level 43 Configuration ends here...............
+      
+      
+      //Level 44 Configuration starts here..............
+      
+      level44 = new JLabel();
+      level44.setFont(new Font("arial",Font.PLAIN,20));
+      level44.setForeground(Color.WHITE);
+      level44.setText("Level 44 : 10 Lines(185 Words)");
+      level44.setBounds(70,256,300,30);
+      
+      
+      open44 = new JButton();
+      open44.setFont(new Font("arial",Font.PLAIN,20));
+      open44.setBackground(Color.GRAY);
+      open44.setForeground(Color.WHITE);
+      open44.setIcon(play);
+      open44.setText("Open Playground");
+      open44.setBounds(1039,256,190,30);
+      
+      //Level 44 Configuraion ends here.....................
+      
+      
+      //Level 45 Configuration starts here..................
+      
+      level45 = new JLabel();
+      level45.setFont(new Font("arial",Font.PLAIN,20));
+      level45.setForeground(Color.WHITE);
+      level45.setText("Level 45 : 11 Lines(215 Words)");
+      level45.setBounds(70,316,300,30);
+      
+      
+     open45 = new JButton();
+     open45.setFont(new Font("arial",Font.PLAIN,20));
+     open45.setBackground(Color.GRAY);
+     open45.setForeground(Color.WHITE);
+     open45.setIcon(play);
+     open45.setText("Open Playground");
+     open45.setBounds(1039,316,190,30);
+     
+     //Level 45 Configuration ends here..................
+     
+     
+     //Level 46 Configuration starts here..............
+     
+     level46 = new JLabel();
+     level46.setFont(new Font("arial",Font.PLAIN,20));
+     level46.setForeground(Color.WHITE);
+     level46.setText("Level 46 : 11 Lines(203 Words)");
+     level46.setBounds(70,376,300,30);
+     
+     
+     open46 = new JButton();
+     open46.setFont(new Font("arial",Font.PLAIN,20));
+     open46.setBackground(Color.GRAY);
+     open46.setForeground(Color.WHITE);
+     open46.setIcon(play);
+     open46.setText("Open Playground");
+     open46.setBounds(1039,376,190,30);
+     
+     //Level 46 Configuration ends here................
+     
+     
+     //Level 47 Configuration starts here...............
+     
+     level47 = new JLabel();
+     level47.setFont(new Font("arial",Font.PLAIN,20));
+     level47.setForeground(Color.WHITE);
+     level47.setText("Level 47 : 11 Lines(190 Words)");
+     level47.setBounds(70,436,300,30);
+     
+     
+     open47 = new JButton();
+     open47.setFont(new Font("arial",Font.PLAIN,20));
+     open47.setBackground(Color.GRAY);
+     open47.setForeground(Color.WHITE);
+     open47.setIcon(play);
+     open47.setText("Open Playground");
+     open47.setBounds(1039,436,190,30);
+     
+     //Level 47 Configuration ends here...................
+     
+     
+     //Level 48 Configuration starts here.....................
+     
+     level48 = new JLabel();
+     level48.setFont(new Font("arial",Font.PLAIN,20));
+     level48.setForeground(Color.WHITE);
+     level48.setText("Level 48 : 11 Lines(224 Words)");
+     level48.setBounds(70,496,300,30);
+     
+     
+     open48 = new JButton();
+     open48.setFont(new Font("arial",Font.PLAIN,20));
+     open48.setBackground(Color.GRAY);
+     open48.setForeground(Color.WHITE);
+     open48.setIcon(play);
+     open48.setText("Open Playground");
+     open48.setBounds(1039,496,190,30);
+     
+     //Level 48 Configuration ends here...............................
+     
+     
+     
+     //Level 49 Configuration starts here.......................
+     
+     level49 = new JLabel();
+     level49.setFont(new Font("arial",Font.PLAIN,20));
+     level49.setForeground(Color.WHITE);
+     level49.setText("Level 49 : 12 Lines(214 Words)");
+     level49.setBounds(70,556,300,30);
+     
+     
+     open49 = new JButton();
+     open49.setFont(new Font("arial",Font.PLAIN,20));
+     open49.setBackground(Color.GRAY);
+     open49.setForeground(Color.WHITE);
+     open49.setIcon(play);
+     open49.setText("Open Playground");
+     open49.setBounds(1039,556,190,30);
+     
+     //Level 49 Configuration ends here..........................
+     
+     
+     //Level 50 Configuration starts here............................
+     
+     level50 = new JLabel();
+     level50.setFont(new Font("arial",Font.PLAIN,20));
+     level50.setForeground(Color.WHITE);
+     level50.setText("Level 50 : 12 Lines(210 Words)");
+     Rectangle bounds = new Rectangle(70,616,300,30);
+     level50.setBounds(bounds);
+     
+     
+     open50 = new JButton();
+     open50.setFont(new Font("arial",Font.PLAIN,20));
+     open50.setBackground(Color.GRAY);
+     open50.setForeground(Color.WHITE);
+     open50.setIcon(play);
+     open50.setText("Open Playground");
+     Rectangle bounds1 = new Rectangle(1039,616,190,30);
+     open50.setBounds(bounds1);
+     
+     //Level 50 Configuration ends here......................................
+     
+     //Expertise - I Configuration ends here......................................
+     
+     
+     
+     //Expertise - II Configuration starts here............................
+     
+     expertiseLevel2 = new JLabel();
+     expertiseLevel2.setFont(new Font("arial",Font.PLAIN,20));
+     expertiseLevel2.setForeground(Color.WHITE);
+     expertiseLevel2.setIcon(intermediateStar);
+     //expertiseLevel2.setText("Expertise - II");
+     Rectangle expertiseTwo = new Rectangle(70,26,80,30);
+     expertiseLevel2.setBounds(expertiseTwo);
+     
+     
+     expertiseLevelTwo = new JLabel();
+     expertiseLevelTwo.setFont(new Font("arial",Font.PLAIN,20));
+     expertiseLevelTwo.setForeground(Color.WHITE);
+     expertiseLevelTwo.setIcon(beginnerStar);
+     expertiseLevelTwo.setText("Expertise - II");
+     Rectangle expertiseLevelTwoBounds = new Rectangle(133,26,280,30);
+     expertiseLevelTwo.setBounds(expertiseLevelTwoBounds);
+     
+     
+     //Level 51 Configuration Starts Here.................
+     
+     level51 = new JLabel();
+     level51.setFont(new Font("arial",Font.PLAIN,20));
+     level51.setForeground(Color.WHITE);
+     level51.setText("Level 51 : 12 Lines(218 Words)");
+     Rectangle level51Bounds = new Rectangle(70,76,300,30);
+     level51.setBounds(level51Bounds);
+     
+     open51 = new JButton();
+     open51.setFont(new Font("arial",Font.PLAIN,20));
+     open51.setBackground(Color.GRAY);
+     open51.setForeground(Color.WHITE);
+     open51.setIcon(play);
+     open51.setText("Open Playground");
+     Rectangle open51Bounds = new Rectangle(1039,76,190,30);
+     open51.setBounds(open51Bounds);
+     
+     
+     //Level 51 Configuration Ends Here..........................
+     
+     
+     
+     
+     //Level 52 Configurtion Starts Here.............................
+     
+     level52 = new JLabel();
+     level52.setFont(new Font("arial",Font.PLAIN,20));
+     level52.setForeground(Color.WHITE);
+     level52.setText("Level 52 : 12 Lines(237 Words)");
+     Rectangle level52Bounds = new Rectangle(70,136,300,30);
+     level52.setBounds(level52Bounds);
+     
+     
+    open52 = new JButton();
+    open52.setFont(new Font("arial",Font.PLAIN,20));
+    open52.setBackground(Color.GRAY);
+    open52.setForeground(Color.WHITE);
+    open52.setIcon(play);
+    open52.setText("Open Playground");
+    Rectangle open52Bounds = new Rectangle(1039,136,190,30);
+    open52.setBounds(open52Bounds);
+    
+    //Level 52 Configuration Ends Here..............................
+    
+    
+    //Level 53 Configuration Starts Here.........................
+    
+    level53 = new JLabel();
+    level53.setFont(new Font("arial",Font.PLAIN,20));
+    level53.setForeground(Color.WHITE);
+    level53.setText("Level 53 : 13 Lines(247 Words)");
+    Rectangle level53Bounds = new Rectangle(70,196,300,30);
+    level53.setBounds(level53Bounds);
+    
+    
+    open53 = new JButton();
+    open53.setFont(new Font("arial",Font.PLAIN,20));
+    open53.setBackground(Color.GRAY);
+    open53.setForeground(Color.WHITE);
+    open53.setIcon(play);
+    open53.setText("Open Playground");
+    Rectangle open53Bounds = new Rectangle(1039,196,190,30);
+    open53.setBounds(open53Bounds);
+    
+    
+    //Level 53 Configuration Ends Here...................
+    
+    
+    //Font Configuration Starts Here....................
+    
+    font = new Font("arial",Font.PLAIN,20);
+    
+    //Font Configuration Ends Here.........................
+    
+   
+    //Level 54 Configuration Starts Here..............
+    
+    level54 = new JLabel();
+    level54.setFont(font);
+    level54.setForeground(Color.WHITE);
+    level54.setText("Level 54 : 13 Lines(239 Words)");
+    Rectangle level54Bounds = new Rectangle(70,256,300,30);
+    level54.setBounds(level54Bounds);
+    
+    
+    open54 = new JButton();
+    open54.setFont(font);
+    open54.setBackground(Color.GRAY);
+    open54.setForeground(Color.WHITE);
+    open54.setIcon(play);
+    open54.setText("Open Playground");
+    Rectangle open54Bounds = new Rectangle(1039,256,190,30);
+    open54.setBounds(open54Bounds);
+    
+   //Level 54 Configuration Ends Here.........................
+   
+   
+   //Level 55 Configuration Starts Here.........................
+   
+   level55 = new JLabel();
+   level55.setFont(font);
+   level55.setForeground(Color.WHITE);
+   level55.setText("Level 55 : 13 Lines(239 Words)");
+   Rectangle level55Bounds = new Rectangle(70,316,300,30);
+   level55.setBounds(level55Bounds);
+
+   open55 = new JButton();
+   open55.setFont(font);
+   open55.setBackground(Color.GRAY);
+   open55.setForeground(Color.WHITE);
+   open55.setIcon(play);
+   open55.setText("Open Playground");
+   Rectangle open55Bounds = new Rectangle(1039,316,190,30);
+   open55.setBounds(open55Bounds);
+   
+   //Level 55 Configuration Ends Here...............
+   
+   
+   //Level 56 Configuration Starts Here..............
+   
+    level56 = new JLabel();
+    level56.setFont(font);
+    level56.setForeground(Color.WHITE);
+    level56.setText("Level 56 : 13 Lines(239 Words)");
+    Rectangle level56Bounds = new Rectangle(70,376,300,30);
+    level56.setBounds(level56Bounds);
+    
+    
+    open56 = new JButton();
+    open56.setFont(font);
+    open56.setBackground(Color.GRAY);
+    open56.setForeground(Color.WHITE);
+    open56.setIcon(play);
+    open56.setText("Open Playground");
+    Rectangle open56Bounds = new Rectangle(1039,376,190,30);
+    open56.setBounds(open56Bounds);
+   
+   
+   //Level 56 Configuration Ends Here....................
+   
+   
+   
+   //Level 57 Configuration Starts Here.................
+   
+   
+   level57 = new JLabel();
+   level57.setFont(font);
+   level57.setForeground(Color.WHITE);
+   level57.setText("Level 57 : 14 Lines(248 Words)");
+   Rectangle level57Bounds = new Rectangle(70,436,300,30);
+   level57.setBounds(level57Bounds);
+   
+   
+   open57 = new JButton();
+   open57.setFont(font);
+   open57.setBackground(Color.GRAY);
+   open57.setForeground(Color.WHITE);
+   open57.setIcon(play);
+   open57.setText("Open Playground");
+   Rectangle open57Bounds = new Rectangle(1039,436,190,30);
+   open57.setBounds(open57Bounds);
+   
+   //Level 57 Configuration Ends Here.................
+   
+   
+   //Level 58 Configuration Starts Here........................
+   
+   level58 = new JLabel();
+   level58.setFont(font);
+   level58.setForeground(Color.WHITE);
+   level58.setText("Level 58 : 14 Lines(257 Words)");
+   Rectangle level58Bounds = new Rectangle(70,496,300,30);
+   level58.setBounds(level58Bounds);
+   
+   open58 = new JButton();
+   open58.setFont(font);
+   open58.setBackground(Color.GRAY);
+   open58.setForeground(Color.WHITE);
+   open58.setIcon(play);
+   open58.setText("Open Playground");
+   Rectangle open58Bounds = new Rectangle(1039,496,190,30);
+   open58.setBounds(open58Bounds);
+   
+   //Level 58 Configuration Ends Here.....................
+   
+   
+   
+   //Level 59 Configuration Starts Here..................
+   
+   level59 = new JLabel();
+   level59.setFont(font);
+   level59.setForeground(Color.WHITE);
+   level59.setText("Level 59 : 14 Lines(253 Words)");
+   Rectangle level59Bounds = new Rectangle(70,556,300,30);
+   level59.setBounds(level59Bounds);
+   
+   
+   open59 = new JButton();
+   open59.setFont(font);
+   open59.setBackground(Color.GRAY);
+   open59.setForeground(Color.WHITE);
+   open59.setIcon(play);
+   open59.setText("Open Playground");
+   Rectangle open59Bounds = new Rectangle(1039,556,190,30);
+   open59.setBounds(open59Bounds);
+   
+   //Level 59 Configuration Ends Here...........................
+   
+   
+   
+   //Level 60 Configuration Starts Here.............................
+   
+   level60 = new JLabel();
+   level60.setFont(font);
+   level60.setForeground(Color.WHITE);
+   level60.setText("Level 60 : 14 Lines(256 Words)");
+   Rectangle level60Bounds = new Rectangle(70,616,300,30);
+   level60.setBounds(level60Bounds);
+   
+   
+   open60 = new JButton();
+   open60.setFont(font);
+   open60.setBackground(Color.GRAY);
+   open60.setForeground(Color.WHITE);
+   open60.setIcon(play);
+   open60.setText("Open Playground");
+   Rectangle open60Bounds = new Rectangle(1039,616,190,30);
+   open60.setBounds(open60Bounds);
+   
+   
+   //Level 60 Configuration Ends Here..........................
+   
+   
+   
+   //About the software configuration starts here....................
+   
+   information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_New.png");
+   
+  int buttonCount = 6;
+  aboutTheSoftware = new JButton[buttonCount];
+   
+  // int length = 6;
+   
+   for(int i = 0;i < buttonCount;i++){
+       aboutTheSoftware[i] = new JButton();
+       aboutTheSoftware[i].setFont(new Font("arial",Font.PLAIN,20));
+       aboutTheSoftware[i].setBackground(Color.GRAY);
+       aboutTheSoftware[i].setForeground(Color.WHITE);
+       //aboutTheSoftware[i].setIcon(JOptionPane.INFORMATION_MESSAGE);
+       //aboutTheSoftware[i].setIcon(1);
+       aboutTheSoftware[i].setIcon(information);
+       aboutTheSoftware[i].setText(" About the software");
+       aboutTheSoftware[i].setBounds(1200,700,220,30);
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+    
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      
+      
+      
+      
+      
+      
+      
         
         
         
@@ -1232,6 +1890,7 @@ public class Levels1 {
         beginner1.setLayout(null);
         beginner1.setBackground(Color.GRAY);
         beginner1.add(coordinations1);
+        beginner1.add(aboutTheSoftware[0]);
         beginner1.add(beginner);
         beginner1.add(level1);
         beginner1.add(open1);
@@ -1260,6 +1919,7 @@ public class Levels1 {
         beginner2.setLayout(null);
         beginner2.setBackground(Color.GRAY);
         beginner2.add(coordinations2);
+        beginner2.add(aboutTheSoftware[1]);
         beginner2.add(beginnerLevel2);
         beginner2.add(level11);
         beginner2.add(open11);
@@ -1287,6 +1947,7 @@ public class Levels1 {
         intermediate1.setLayout(null);
         intermediate1.setBackground(Color.GRAY);
         intermediate1.add(coordinations3);
+        intermediate1.add(aboutTheSoftware[2]);
         intermediate1.add(intermediateLevel1);
         intermediate1.add(level21);
         intermediate1.add(open21);
@@ -1314,6 +1975,7 @@ public class Levels1 {
         intermediate2.setLayout(null);
         intermediate2.setBackground(Color.GRAY);
         intermediate2.add(coordinations4);
+        intermediate2.add(aboutTheSoftware[3]);
         intermediate2.add(intermediateLevel2);
         intermediate2.add(level31);
         intermediate2.add(open31);
@@ -1341,12 +2003,60 @@ public class Levels1 {
         expertise1.setLayout(null);
         expertise1.setBackground(Color.GRAY);
         expertise1.add(coordinations5);
+        expertise1.add(aboutTheSoftware[4]);
+        expertise1.add(expertiseLevel1);
+        expertise1.add(expertiseLevelOne);
+        expertise1.add(level41);
+        expertise1.add(open41);
+        expertise1.add(level42);
+        expertise1.add(open42);
+        expertise1.add(level43);
+        expertise1.add(open43);
+        expertise1.add(level44);
+        expertise1.add(open44);
+        expertise1.add(level45);
+        expertise1.add(open45);
+        expertise1.add(level46);
+        expertise1.add(open46);
+        expertise1.add(level47);
+        expertise1.add(open47);
+        expertise1.add(level48);
+        expertise1.add(open48);
+        expertise1.add(level48);
+        expertise1.add(open48);
+        expertise1.add(level49);
+        expertise1.add(open49);
+        expertise1.add(level50);
+        expertise1.add(open50);
         tabbedPane.add("Expertise - I", expertise1);
         
         expertise2 = new JPanel();
         expertise2.setLayout(null);
         expertise2.setBackground(Color.GRAY);
         expertise2.add(coordinations6);
+        expertise2.add(aboutTheSoftware[5]);  
+        expertise2.add(expertiseLevel2);
+        expertise2.add(expertiseLevelTwo);
+        expertise2.add(level51);
+        expertise2.add(open51);
+        expertise2.add(level52);
+        expertise2.add(open52);
+        expertise2.add(level53);
+        expertise2.add(open53);
+        expertise2.add(level54);
+        expertise2.add(open54);
+        expertise2.add(level55);
+        expertise2.add(open55);
+        expertise2.add(level56);
+        expertise2.add(open56);
+        expertise2.add(level57);
+        expertise2.add(open57);
+        expertise2.add(level58);
+        expertise2.add(open58);
+        expertise2.add(level59);
+        expertise2.add(open59);
+        expertise2.add(level60);
+        expertise2.add(open60);
         tabbedPane.add("Expertise - II", expertise2);
         
         
@@ -1427,7 +2137,7 @@ public class Levels1 {
     
     //Beginner - I Button Configuration Starts Here.................
     
-    public void openPlayground1(){
+    public void openPlayground1(){      //Level 1 - Level 5 : "Welcoming the Beginner into the Typing World."
         open1.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -1528,7 +2238,7 @@ public class Levels1 {
    }
     
     
-   public void openPlayground5(){
+   public void openPlayground5(){  //Level 1 - Level 5 : "Welcoming the Beginner into the Typing World."
        open5.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -1550,7 +2260,7 @@ public class Levels1 {
        });
    }
    
-   public void openPlayground6(){
+   public void openPlayground6(){   //Level 6 - Level  10 : "The tale of race between tortoise and hare".
        open6.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -1641,7 +2351,7 @@ public class Levels1 {
    }
    
    
-   public void openPlayground10(){
+   public void openPlayground10(){ //Level 6 - Level 10 : "The tale of race between tortoise and hare."
        open10.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -1665,14 +2375,14 @@ public class Levels1 {
    }
    
    
-   //Button - I Configurtion Ends Here............
+   //Beginner - I Configuration Ends Here....................
    
    
    
    
-   //Button - II Configuration starts here.............
+   //Beginner - II Configuration Starts Here.......................
    
-   public void openPlayground11(){
+   public void openPlayground11(){   //Level 11 - Level 15 : "The crow and the pitcher."
        open11.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
               try{
@@ -1680,7 +2390,7 @@ public class Levels1 {
               Working w = new Working();
               w.key = key;
               
-              String level11  = "In a very hot and dry desert, there was a smart crow. The crow was really thirsty and was looking for water. After flying for a long time, the crow saw a pitcher that was partly buried in the sand. The crow felt hopeful but wasn't sure if there would be any water in it. The crow flew down and looked inside the pitcher. It saw that there was a little bit of water at the bottom, but it was too low for the crow to drink using its beak. The crow thought hard, trying to figure out what to do.";
+              String level11  = "In a very hot and dry desert, there was a smart crow. The crow was really thirsty and was looking for water. After flying for a long time, the crow saw a pitcher that was partly buried in the sand. The crow felt hopeful but was not sure if there would be any water in it. The crow flew down and looked inside the pitcher. It saw that there was a little bit of water at the bottom, but it was too low for the crow to drink using its beak. The crow thought hard, trying to figure out what to do.";
               
               Key_Master1.canvas.setText(level11);
               Key_Master1.canvas.addKeyListener(w);
@@ -1766,7 +2476,7 @@ public class Levels1 {
        });
    }
    
-   public void openPlayground15(){
+   public void openPlayground15(){  //Level 11 - Level 15 : "The crow and the pitcher."
        open15.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
               try{
@@ -1789,7 +2499,7 @@ public class Levels1 {
    }
    
    
-   public void openPlayground16(){
+   public void openPlayground16(){ //Level 16 - Level 20 : "The tale of four cows and one lion."
        open16.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
               try{
@@ -1881,7 +2591,7 @@ public class Levels1 {
    
    
    
-   public void openPlayground20(){
+   public void openPlayground20(){    //Level 16 - Level 20 : "The tale of four cows and one lion."
        open20.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -1910,7 +2620,7 @@ public class Levels1 {
    
    //Intermediate - I Configuration starts here..........
    
-   public void openPlayground21(){
+   public void openPlayground21(){    //Level 21 - Level 25 : "The Power of Positive Thinking."
        open21.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
               try{
@@ -2007,7 +2717,7 @@ public class Levels1 {
    
    
    
-   public void openPlayground25(){
+   public void openPlayground25(){    //Level 21 - Level 25 : "The Power of Positive Thinking."
        open25.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2032,7 +2742,7 @@ public class Levels1 {
    
    
    
-   public void openPlayground26(){
+   public void openPlayground26(){    //Level 26 - Level 30 : "The Importance of Time Management."
        open26.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2125,7 +2835,7 @@ public class Levels1 {
    
    
    
-   public void openPlayground30(){
+   public void openPlayground30(){     //Level 25 - Level 30 : "The Importance of Time Management."
        open30.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2152,7 +2862,7 @@ public class Levels1 {
    
    //Intermediate - II Configuration Starts Here.....................
    
-   public void openPlayground31(){    // Level 31 - Level 35 : "The Impact of climate change".
+   public void openPlayground31(){    // Level 31 - Level 35 : "The Impact of climate change."
        open31.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2248,7 +2958,7 @@ public class Levels1 {
    
    
    
-   public void openPlayground35(){
+   public void openPlayground35(){       //Level 30 - Level 35 : "The Impact of Climate Change."
        open35.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2273,7 +2983,7 @@ public class Levels1 {
    
    
    
-   public void openPlayground36(){             //Level 36 - Level 40 : "Data Entry and Accuracy in Typing".
+   public void openPlayground36(){             //Level 36 - Level 40 : "Data Entry and Accuracy in Typing."
        open36.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2367,7 +3077,7 @@ public class Levels1 {
    }
    
    
-   public void openPlayground40(){
+   public void openPlayground40(){  //Level 35 - Level 40 : "Data Entry and Accuracy in Typing."
        open40.addActionListener(new ActionListener(){
            public void actionPerformed(ActionEvent e){
                try{
@@ -2390,13 +3100,496 @@ public class Levels1 {
    }
    
    
+   //Intermediate - II Configuration Ends here...........
+   
+   
+   //Expertise - I Configuration starts here.................
+   
+   public void openPlayground41(){  //Level 41 - Level 44 : "The Significance of Cultural Diversity."
+       open41.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level41 = new StringBuilder("Cultural diversity holds paramount significance in our interconnected and globalized world, encompassing the simultaneous existence of an extensive array of cultural customs, traditions, and beliefs within the framework of a community or the broader global context. The profound recognition and authentic appreciation of cultural diversity contribute indispensably to the establishment and enhancement of social cohesion, fostering an environment of mutual respect, amity, and inclusivity. The embracement and commemoration of cultural diversity enable individuals to venerate and uphold their own cultural heritage, while concurrently cultivating an ethos of open-mindedness, acceptance, and empathy towards others. This intricately woven tapestry of diverse cultures begets a multifaceted and pluralistic society."+"\n"+"where the inherent value and magnificence of differences are accorded due recognition and admiration, fostering a profound sense of belonging, unity, and harmony among all constituents of the community. Cultural diversity assumes a pivotal and transformative role in shaping the multifaceted realms of art, literature, and intellectual pursuits. Each culture emanates its distinct and captivating artistic expressions, captivating storytelling traditions, and alluring creative manifestations.");
+                   
+                   Key_Master1.canvas.setText(level41.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground42(){
+       open42.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level42 = new StringBuilder("These profound and intricate artistic endeavors serve not only as steadfast guardians of cultural heritage but also as catalysts for cross-cultural innovation, collaboration, and exploration. The convergence and intermingling of diverse artistic traditions engender a fertile ground for the birth of novel forms, innovative styles, and compelling narratives, cultivating a dynamic and vibrant cultural landscape wherein creativity flourishes and artists discover boundless inspiration within the tapestry of humanity's rich and diverse cultural fabric. The seamless exchange and amalgamation of artistic ideas and influences between cultures enhance artistic expression, nurture and strengthen cultural identities, and give rise to a universal language that transcends geographical, social, and linguistic boundaries."+"\n"+"Uniting people across the globe through shared aesthetic experiences. Through the interplay and harmonization of diverse artistic traditions, humanity's creative endeavors find new dimensions, inviting individuals to immerse themselves in the beauty of cultural diversity and witness the transformative power of artistic expression.Cultural diversity assumes a pivotal and consequential role in fostering economic growth and develop our interconnected and interdependent global landscape.");
+                   
+                   Key_Master1.canvas.setText(level42.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground43(){
+       open43.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level43 = new StringBuilder(" The dynamic exchange and fusion of diverse cultures propel the engines of innovation, entrepreneurship, and international trade. Each culture contributes its unique and invaluable reservoir of knowledge, skills, and perspectives, acting as a catalyst for economic progress and bolstering competitiveness on a global scale. The amalgamation of diverse cultural influences engenders the emergence of novel industries, innovative products, and tailored services that cater to the multifaceted needs and discerning preferences of an increasingly diverse and multicultural consumer base. The conscious embrace and harnessing of cultural diversity in the realms of business and organizations create an environment that fosters and amplifies creativity, problem-solving prowess, and collaborative synergy."+"\n"+"Thereby propelling innovation forward and securing a competitive edge in the global marketplace. By effectively leveraging the diverse perspectives, experiences, and expertise of individuals hailing from disparate cultural backgrounds, organizations can ignite the flames of innovation, gain profound insights into the intricacies of global markets, and pave the way for sustained and resilient economic growth, attaining new heights of prosperity and success.");
+                   
+                   Key_Master1.canvas.setText(level43.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground44(){     //Level 41 - Level 44 : "The Significance of Cultural Diversity."
+       open44.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level44 = new StringBuilder("Cultural diversity assumes a pivotal and transformative role in fostering social cohesion and nurturing a climate of peaceful coexistence among diverse communities. By promoting and upholding the principles of mutual respect, understanding, and acceptance, cultural diversity acts as a potent and efficacious antidote to the pervasive conflicts, prejudices, and stereotypes that often stem from ignorance or fear. When communities of different cultural backgrounds come together in a spirit of appreciation and celebration, they forge strong and resilient bridges of understanding, empathy, and connection. This serves as a solid foundation for constructive dialogue, cooperative engagement, and collective action in tackling shared societal challenges, such as social inequality, discrimination, and injustice."+"\n"+"Embracing and embracing cultural diversity in all its forms fosters social harmony and ensures that equal opportunities are afforded to all individuals, regardless of their cultural backgrounds. It fosters the cultivation of inclusive societies wherein diverse voices are not only heard and acknowledged but also valued and respected, thereby nurturing a climate of social justice, concord, and sustainable peace. By embracing and cherishing cultural diversity, we cultivate a world in which every individual can thrive and contribute.");
+                   
+                   Key_Master1.canvas.setText(level44.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+              }
+             catch(Exception detect){
+                 System.out.println(detect);
+             }               
+           }   
+       });
+   }
+   
+   
+   
+  public void openPlayground45(){  //Level 45 - Level 48 : "The Advantages and Disadvantages of Online Shopping."
+      open45.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  StringBuilder level45 = new StringBuilder("The advent of online shopping has brought about a paradigm shift in the way we engage in retail transactions, endowing us with an abundance of advantages and conveniences. Foremost among these is the unparalleled accessibility it offers, granting consumers the freedom to peruse and procure an extensive range of products from the sanctuary of their own homes, unbound by the constraints of time and geographical boundaries. This sheer convenience of online shopping not only saves precious time but also obviates the necessity of physically venturing to brick-and-mortar establishments. Moreover, the virtual realm of online shopping affords shoppers an unparalleled gamut of products and services to choose from, endowing them with untrammeled access to a global marketplace at their very fingertips. With a mere handful of clicks, discerning consumers can navigate a veritable cornucopia of options, meticulously compare prices."+"\n"+"One prominent drawback associated with the realm of online shopping lies in the conspicuous absence of physical interaction with the merchandise. In stark contrast to traditional brick-and-mortar establishments, where customers can engage their senses by touching and trying on items before committing to a purchase, online shoppers are bereft of such experiential encounters. Consequently, this dearth of engagement may give rise to a sense of uncertainty and discontentment if the product received fails to align with preconceived expectations.");
+                  
+                  Key_Master1.canvas.setText(level45.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          }
+      });
+  }
+  
+  
+  public void openPlayground46(){
+      open46.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  StringBuilder level46 = new StringBuilder("Furthermore, online shopping necessitates a certain degree of reliance on product descriptions, images, and customer reviews, which, despite their informational value, may occasionally fall short in providing a comprehensive understanding of the product's quality or suitability. Thus, inherent in the realm of online shopping is a discernible level of risk, as consumers find themselves compelled to place their trust in the accuracy of the information provided and the reputation of the seller.Yet another drawback associated with the realm of online shopping lies in the lurking specter of fraud and the omnipresent security risks it entails. Regrettably, the expansive realm of the internet is not impervious to the machinations of unscrupulous individuals who seek to perpetrate scams and engage in fraudulent activities. As such, it is imperative for online shoppers to exercise caution when divulging their personal and financial information."+"\n"+"Cybercriminals, driven by nefarious intentions, may employ insidious tactics to pilfer sensitive data, including but not limited to credit card details, thereby catapulting unsuspecting victims into the treacherous realm of identity theft or subjecting them to unauthorized utilization of their hard-earned funds. In light of these pernicious threats, it is of paramount importance for online shoppers to remain steadfast in their commitment to security measures.");
+                  
+                  Key_Master1.canvas.setText(level46.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          }
+      });
+  }
+  
+  
+  
+  public void openPlayground47(){
+      open47.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  StringBuilder level47 = new StringBuilder("These measures encompass selecting reputable websites, employing secure payment methods, and diligently fortifying their devices and accounts with robust passwords and state-of-the-art security software to shield themselves against the insidious predations of cybercriminals.Conversely, online shopping bestows upon discerning consumers a litany of advantages that serve as compelling reasons for its enduring popularity. Notably, a pivotal advantage lies in the unparalleled availability of an expansive assortment of products. Online retailers, unencumbered by the spatial limitations that confine their brick-and-mortar counterparts, can proffer an extensive repertoire of items that surpasses the inventory of physical stores. This bountiful range encompasses not only commonplace goods but also rare and elusive commodities that may prove elusive within local confines."+"\n"+"Consequently, online shoppers find themselves bestowed with an unparalleled opportunity to procure unique and specialized items that might otherwise elude their grasp. Moreover, the realm of online shopping often unveils a treasure trove of exclusive deals and discounts, affording consumers the delightful prospect of securing remarkable savings on their purchases. Such alluring incentives serve as an additional impetus for shoppers to embark upon the virtual realm of online commerce, reaping the tangible benefits of prudent financial management.");
+                  
+                  Key_Master1.canvas.setText(level47.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+      }
+      });
+  }
+  
+   
+   
+   public void openPlayground48(){   //Level 45 - Level 48 : "The Advantages and Disadvantages in Online Shopping."
+       open48.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level48 = new StringBuilder("As we draw the curtains on our exploration of online shopping, it is incumbent upon us to cast a discerning gaze upon yet another compelling advantage that endows this mode of retail with an irresistible allure the unparalleled convenience of doorstep delivery. With a mere few clicks of the mouse or taps on the screen, discerning shoppers find themselves catapulted into a realm where the notion of laborious trips to physical stores is relegated to the annals of history. No longer must they grapple with the arduous task of navigating through bustling aisles, clutching heavy bags and enduring the weariness that permeates both body and soul. The realm of online shopping, in its benevolent embrace, affords them the resplendent luxury of having their carefully curated purchases transported to their very doorsteps, obliterating the need to embark upon physical sojourns to collect their coveted acquisitions."+"\n"+"This invaluable boon holds particular significance for individuals beset with mobility issues or those who find themselves ensnared within the clutches of limited access to reliable transportation. The seamless orchestration of doorstep delivery, in intricate ballet of efficiency, ensures that the sanctity of time is honored and the strains of physical exertion are assuaged. By deftly circumventing the interminable queues and the congested hallowed grounds of physical stores, online shoppers find themselves emboldened by the newfound reserves of time and energy.");
+                   
+                   Key_Master1.canvas.setText(level48.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+  public void openPlayground49(){  //Level 49 - Level 52 : "The Role of Technology in Education".
+      open49.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  Working w = new Working();
+                  w.key = key;
+                  
+                  StringBuilder level49 = new StringBuilder("Technology, with its inexorable march, has emerged as a transformative force within the realm of education, instigating seismic shifts in the pedagogical landscape. In this era defined by the ubiquitous presence of digital innovations, technology assumes a role of paramount significance, poised at the vanguard of reshaping and reimagining the educational journey for students and educators alike. With its multifaceted arsenal of interactive learning platforms, immersive virtual environments, and cutting-edge online collaboration tools, technology bequeaths upon the educational realm an unassailable array of opportunities to transcend the boundaries of conventional teaching and learning methodologies. This relentless march of technological advancements heralds a new dawn, one characterized by a tapestry of engagement, personalization, and inclusivity, where learners find themselves at the epicenter of a dynamic and vibrant learning ecosystem that unfurls boundless vistas of intellectual exploration and growth, Within this enchanting landscape."+"\n"+"The symbiotic relationship between technology and education flourishes, nurturing a harmonious union that is poised to redefine the very essence of learning itself.Amidst the ever-evolving landscape of education, the seamless integration of technology bestows upon the educational realm a pantheon of advantages that reverberate with resounding impact. Foremost among these advantages is the enhancement of accessibility and inclusivity, which serves as a clarion call for equitable educational opportunities to be made available to students.");
+                  
+                  Key_Master1.canvas.setText(level49.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          }
+      });
+  }
+   
+   
+   
+   public void openPlayground50(){
+       open50.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level50 = new StringBuilder("Furthermore, technology unlocks the potential for personalized learning experiences, presenting a veritable cornucopia of opportunities for students to embark upon an odyssey of knowledge acquisition tailored precisely to their unique proclivities and individualized learning styles. Each student becomes the maestro of their educational symphony, conducting the harmonious crescendos of intellectual growth at their own rhythm, unhindered by the constraints of conventional, one-size-fits-all pedagogical approaches. Moreover, the advent of technology ushers in a cornucopia of interactive and immersive learning experiences, wherein educators wield the transformative power to imbue their lessons with a tapestry of multimedia elements, engendering an enchanting melange of visual and auditory stimuli that propel comprehension and retention to unprecedented heights. Through the judicious interweaving of interactive simulations, multimedia presentations, and captivating digital resources, educators orchestrate a symphony of engagement."+"\n"+"Enveloping students within a realm of intellectual curiosity and catalyzing a profound metamorphosis in the very fabric of their learning journeys.Within the realm of education, technology assumes the guise of a benevolent ally, endowing educators with an arsenal of tools and resources that amplify their pedagogical prowess. Online learning management systems stand as formidable gateways to a realm of enhanced efficiency, as educators deftly navigate through the labyrinthine corridors of virtual classrooms, armed with the power to create and distribute.");
+                   
+                   Key_Master1.canvas.setText(level50.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+           }
+       });
+   }
+   
+  //Expertise - I Configuration Ends Here..............................
    
    
    
    
+   //Expertise - II Configuration Starts Here........................
+   
+   public void openPlayground51(){
+       open51.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level51 = new StringBuilder("These digital platforms bring forth a cornucopia of opportunities to streamline administrative tasks, liberating educators from the shackles of mundane paperwork and providing them with invaluable time to focus on their true passion: the cultivation of young minds. Furthermore, educational software and applications assume the mantle of steadfast companions, furnishing teachers with a treasure trove of data-driven insights that serve as beacons illuminating the path to pedagogical excellence. Armed with these technological marvels, educators traverse the educational landscape with unwavering precision, guided by the flickering torchlight of granular student progress data. Through the lens of technology, educators become virtuoso conductors, orchestrating the symphony of learning with meticulous precision, attuned to the delicate nuances of each student's journey. Armed with data-rich knowledge, educators deftly navigate the vast expanses of pedagogy, honing their craft, and sculpting the contours of instruction to seamlessly meld with the unique mosaic of each student's learning needs."+"\n"+"In the ever-expanding landscape of education, technology stands as a catalyst, propelling collaboration and communication to unprecedented heights. Through the seamless integration of online platforms and virtual classrooms, the boundaries of time and space fade into insignificance, bestowing upon students the power to engage in real-time collaboration, transcending the constraints of physical proximity. Within these digital realms, students embark upon a voyage of discovery, united by a common purpose.");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                   
+                   Key_Master1.canvas.setText(level51.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);               
+               }
+           }
+       });
+   }
    
    
    
+   public void openPlayground52(){    //Level 48 - Level 52 :  "The Role of Technology in Education."
+       open52.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   Working w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level52 = new StringBuilder("As they navigate the winding pathways of group projects, engaging in spirited discussions and exchanging invaluable peer feedback. Through the symphony of collective effort, harnessed by the unseen threads of digital connectivity, students are immersed in a tapestry of shared knowledge, fortifying their critical thinking skills, and fostering a deep sense of camaraderie. Moreover, technology acts as a conduit of communication, seamlessly linking educators, students, and parents in an intricate web of information exchange. With the click of a button, educators transcend the limitations of time and distance, effortlessly traversing the digital expanse to engage in meaningful conversations and provide timely guidance. The virtual realm becomes a vibrant hub of interaction, where questions find their answers, concerns are addressed, and the collective wisdom of educators, students, and parents intertwine to create a tapestry of shared understanding. Through the harmonious convergence of technology and communication, education transcends the boundaries of the physical world."+"\n"+"As the curtain rises on the stage of the 21st century, the spotlight of education falls upon the pivotal role of technology in preparing students for the untrodden paths that lie ahead. In this era of rapid technological advancement, the integration of technology within the educational sphere assumes paramount importance, serving as the cornerstone of future success. By embracing technology in education, students are bestowed with the precious gift of digital literacy, enabling them to unravel the intricacies of the digital realm with ease and finesse.");
+                   
+                   Key_Master1.canvas.setText(level52.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground53(){    //Level 53 - Level 56 : "AI - Artificial Intelligence."
+       open53.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level53 = new StringBuilder("Artificial Intelligence (AI), a revolutionary field at the intersection of computer science and cognitive science, heralds a new era of technological advancements that replicate and augment human intelligence. At its core, AI encompasses the design, development, and deployment of computer systems endowed with the capability to perform tasks that traditionally demand human intellect. These intelligent systems are built upon a foundation of sophisticated algorithms, cutting-edge technologies, and vast amounts of data. They leverage a multitude of methodologies, including machine learning, natural language processing, and robotics, to emulate human cognitive processes such as learning, reasoning, and decision-making. By harnessing the power of AI, we unlock the potential for machines to analyze complex patterns, extract meaningful insights, and execute tasks with precision and efficiency. From autonomous vehicles to virtual assistants, AI permeates various aspects of our lives, revolutionizing industries, and reshaping the way we live, work, and interact. As AI continues to evolve and push the boundaries of human ingenuity, it holds the promise of transforming society and revolutionizing various fields."+"\n"+"Unlocking new frontiers of knowledge, and empowering us to tackle the most complex challenges of our time. With its boundless potential and transformative capabilities, AI stands as a testament to humanity's relentless pursuit of progress and innovation in the realm of intelligent systems. In addition to the industries mentioned above, AI has made significant strides in various other sectors, driving innovation and transforming operations. In the retail industry, AI is employed for demand forecasting, inventory management and personalized services.");
+                   
+                   Key_Master1.canvas.setText(level53.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   public void openPlayground54(){
+       open54.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                try{
+                    key = new Key_Master1();
+                    w = new Working();
+                    w.key = key;
+                    
+                    StringBuilder level54 = new StringBuilder("Personalized recommendations, enabling businesses to optimize their supply chains and enhance customer experiences. In manufacturing, AI-powered robots and automation systems are revolutionizing production lines, increasing efficiency, and improving quality control. The agriculture sector benefits from AI through precision farming techniques, where sensors and data analytics help optimize irrigation, pest control, and crop management practices. AI also plays a vital role in the energy sector, optimizing energy consumption, predicting equipment failures, and enabling the integration of renewable energy sources into the grid. Furthermore, AI is leveraged in entertainment and media for content recommendation algorithms, video analysis, and virtual assistants. The applications of AI span across diverse industries, continually pushing the boundaries of what is possible and driving advancements in technology and productivity.Machine learning, as a subset of AI, encompasses a wide array of techniques and algorithms that empower computers to learn and make intelligent decisions without explicit programming. By analyzing vast amounts of data, unveiling intricate patterns, relationships, and insights that might elude human perception."+"\n"+"Machine learning algorithms can uncover patterns, relationships, and insights that may not be immediately apparent to humans. One of the fundamental architectures within machine learning is neural networks, inspired by the intricate workings of the human brain. Neural networks are composed of interconnected layers of artificial neurons that simulate the behavior of their biological counterparts. These networks excel in processing and interpreting complex data, enabling tasks such as noise reduction in image, speech recognition and translation.");
+                    
+                    Key_Master1.canvas.setText(level54.toString());
+                    Key_Master1.canvas.addKeyListener(w);
+                    w.processQuestion(Key_Master1.canvas.getText());
+                    Key_Master1.submit.addActionListener(w);
+                }
+                catch(Exception detect){
+                    System.out.println(detect);
+                }
+           }
+       });
+   }
+   
+   
+   public void openPlayground55(){
+       open55.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level55 = new StringBuilder("Natural language processing, and even autonomous decision-making. As machine learning and neural networks continue to advance, they hold the promise of unlocking new frontiers in AI, empowering systems to continually improve their performance, adapt to evolving scenarios, and revolutionize industries across the globe. As AI continues to progress rapidly, it is imperative to address the ethical considerations and challenges it presents. One significant concern revolves around the potential biases and discriminatory outcomes that can arise from AI systems, particularly as they learn from historical data that may contain inherent biases. The need for transparency, fairness, and accountability in AI algorithms is paramount to mitigate these risks and ensure equitable outcomes. Furthermore, the impact of AI on employment raises important questions regarding job displacement and the potential disruption of the workforce. It highlights the necessity of implementing upskilling and reskilling programs to empower individuals with the skills needed in the evolving job market. Additionally, safeguarding data privacy is crucial, as AI systems rely heavily on data collection analysis for decision-making, fairness and accountability."+"\n"+"Striking the right balance between leveraging data for innovation while respecting individuals privacy rights is an ongoing challenge. Moreover, addressing ethical dilemmas in autonomous systems, such as self-driving cars or AI-powered decision-making, requires careful consideration of moral and legal frameworks. By proactively addressing these ethical considerations and challenges, we can shape the responsible development and deployment of AI, ensuring its positive impact on society while mitigating potential risks.");
+                   
+                   Key_Master1.canvas.setText(level55.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground56(){   //Level 53 - Level 56 : "AI - Artificial Intelligence."
+       open56.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level56 = new StringBuilder("The future trajectory of AI unfolds as a vast expanse brimming with boundless possibilities and profound transformative potential. As the continuum of AI systems propels forward, their evolution engenders an escalating sophistication, equipping them with the acumen to tackle intricate and multifaceted challenges previously deemed impervious to automation. The domain of robotics and automation stands on the precipice of remarkable advancement, with intelligent machines adeptly executing convoluted tasks with unwavering precision and unwonted efficiency. Momentous breakthroughs in the realms of natural language processing and computer vision are poised to unlock novel dimensions in the intricate tapestry of human-computer interaction, fostering an ecosystem of seamless communication and profound comprehension between sentient beings and AI systems. Unremittingly, AI-driven technologies continue to reconfigure industries, streamline operational modalities, and engender a paradigmatic shift in the very fabric of our toil, existence, and interconnectivity with the macrocosm enveloping us. Nevertheless, as the permeation of AI permeates the societal fabric. AI technologies has the power to transform our daily lives."+"\n"+"Yet, amidst this technological expanse. It behooves us to ensure the judicious stewardship of its development and deployment. Such an endeavor necessitates a concerted focus on assuaging concerns apropos of data privacy, algorithmic bias, and the plausible socio-economic implications that may arise in its wake.The future of AI kindles a beacon of hope, empowering us with unprecedented capacities, propelling the trajectory of progress, and engendering a resplendent tapestry of positive impact resonating across the global sphere.");
+                   
+                   Key_Master1.canvas.setText(level56.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+           }
+       });
+   }
+  
+   
+   
+   public void openPlayground57(){  //Level 57 - Level 60 : "The Future of Non - Renewable Energy."
+      open57.addActionListener(new ActionListener(){
+          public void actionPerformed(ActionEvent e){
+              try{
+                  key = new Key_Master1();
+                  w = new Working();
+                  w.key = key;
+                  
+                  StringBuilder level57 = new StringBuilder("The trajectory of non-renewable energy sources in the foreseeable future assumes an indisputably paramount significance and warrants profound contemplation and rigorous examination. As humanity strides forward resolutely and purposefully into an epoch characterized by an increasingly heightened ecological awareness, a palpable sense of urgency to mitigate the perils of climate change permeates the global consciousness. In this momentous juncture of our shared history, the sagacious utilization of non-renewable energy resources demands not just a cursory evaluation, but a meticulously conducted, multidimensional analysis that takes into account the intricate interplay between environmental preservation, energy security, and socio-economic considerations. Non-renewable energy, comprising the geological legacies of eons past, such as coal, oil, and natural gas, is intrinsically confined within the finite confines of our planet, irrefutably transgressing ecological thresholds and engendering a panoply of deleterious environmental ramifications that reverberate across our fragile biosphere. Thus, in the imminent years that lie ahead, the destiny of non-renewable energy rests precariously upon the precipice of a transformative precipice, where the progressive evolution of alternative technologies and the wide-scale adoption of sustainable and equitable practices."+"\n"+"Must harmoniously converge to effectively alleviate our protracted reliance on these impermanent, inherently unsustainable reserves. By forging ahead with unwavering resolve, fostering the relentless pursuit of pioneering research and development, catalyzing innovation, and nurturing a collective commitment to integrate ecologically conscious approaches into our energy policies and systems, we can navigate the treacherous waters of energy transition and boldly chart a course towards a more sustainable,equitable and regenerative energy landscape.");  
+                  
+                  Key_Master1.canvas.setText(level57.toString());
+                  Key_Master1.canvas.addKeyListener(w);
+                  w.processQuestion(Key_Master1.canvas.getText());
+                  Key_Master1.submit.addActionListener(w);
+              }
+              catch(Exception detect){
+                  System.out.println(detect);
+              }
+          }
+      });
+   }
+   
+   
+   public void openPlayground58(){
+       open58.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level58 = new StringBuilder("Regenerative energy landscape that befits the imperatives of our time and preserves the bountiful diversity of life on Earth for future generations.One pivotal and transformative aspect that will undeniably shape the future trajectory of non-renewable energy lies in the accelerated and unabated advancement of renewable energy sources. The ongoing and awe-inspiring plummet in costs associated with a plethora of renewable technologies, exemplified by the remarkable progress witnessed in solar and wind power, has heralded an epoch-defining turning point that reverberates throughout the global energy landscape. A conspicuous and resounding trend, characterized by an inexorable momentum, has swiftly emerged, with an ever-expanding chorus of governments, multinational corporations, and conscientious individuals resolutely pivoting towards a sustainable, low-carbon energy paradigm, eschewing the once-dominant reliance on non-renewable energy sources. This paradigmatic shift, propelled by an intricate tapestry of interconnected factors, embraces an unquenchable thirst for energy security in an era of geopolitical turbulence, an unwavering commitment to mitigate the specter of climate change through the substantial reduction of pernicious carbon emissions, and an acute recognition of the inextricable links between sustainable energy systems. The convergence of these multifaceted drivers has coalesced into a formidable force, fostering an environment ripe for the proliferation of renewable energy infrastructure, bolstering the foundation for a resolute and transition away from the antiquated shackles of non-renewable energy towards an era of unparalleled potential, underscored by clean energy innovation and catalytic economic growth on a global scale. In conjunction with the meteoric ascent of renewable energy, redefining the contours of our approach to energy generation and consumption.");
+                   
+                   System.out.println("From the Level 58 the Capacity of StringBuilder :"+level58.capacity());
+                   Key_Master1.canvas.setText(level58.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground59(){
+        open59.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                try{
+                    key = new Key_Master1();
+                    w = new Working();
+                    w.key = key;
+                    
+                   StringBuilder level59 = new StringBuilder("An additional pivotal facet exerting a profound influence over the prospective trajectory of non-renewable energy revolves around the intensifying global emphasis placed upon the adoption of sustainable practices. A sweeping tide of environmental regulations, international accords, and impassioned public awareness campaigns has coalesced to nurture an awakening collective consciousness, resolute in its acknowledgment of the detrimental consequences precipitated by the continued reliance on non-renewable energy sources. This burgeoning global awareness has galvanized nations and industries alike, impelling them to allocate substantial resources to the domain of research and development, with an unwavering commitment to augmenting energy efficiency and curtailing the pernicious carbon footprints engendered by conventional energy production. In this era of boundless possibilities, the vanguard of scientific inquiry propels the relentless quest for innovative solutions, and at the forefront lies the development of cleaner technologies, exemplified by the nascent but promising field of carbon capture and storage. This cutting-edge domain, with its vast potential, bears the capacity to assuage the grave environmental ramifications inherent in the utilization of non-renewable energy, heralding a new chapter characterized by the harmonization of progress."+"\n"+"Ecological stewardship Furthermore, the interplay of complex geopolitical dynamics and the ever-evolving energy landscapes on a global scale intricately shape the future trajectory of non-renewable energy. It is an inescapable reality that numerous nations, in their fervent pursuit of economic development and unwavering energy security, continue to rely heavily on non-renewable energy sources. Nevertheless, the escalating volatility that pervades fossil fuel markets, accentuated by the realization of their finite nature and environmental impact.");
+                   
+                   Key_Master1.canvas.setText(level59.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(Key_Master1.canvas.getText());
+                   Key_Master1.submit.addActionListener(w);
+                }
+                catch(Exception detect){
+                    System.out.println(detect);
+                }
+           }
+       });
+   }
+   
+   
+   
+   public void openPlayground60(){  //Level 57 - Level 60 : "The Future of Non - Renewable Energy."
+       open60.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               try{
+                   key = new Key_Master1();
+                   w = new Working();
+                   w.key = key;
+                   
+                   StringBuilder level60 = new StringBuilder("Endangered a pressing imperative to explore and implement diversification strategies that can effectively mitigate the potential risks and vulnerabilities associated with overreliance on a singular energy source. Countries around the world have embarked upon a multifaceted expedition to fortify their energy portfolios, undertaking visionary measures to incorporate an extensive array of renewable sources, including solar and wind power, while concurrently delving into the realm of nuclear energy, harnessing the vast potential it holds. Furthermore, investments in groundbreaking technologies such as hydrogen and geothermal power, characterized by their nascent yet highly promising nature, are being fervently pursued, as they embody the embodiment of innovation and sustainability. By embarking on this diversified trajectory, nations aim to substantially reduce their dependence on non-renewable energy, ushering in an era of heightened energy stability, both in the short term and the long term, thus ensuring resilience in the face of evolving global energy dynamics. As we conscientiously navigate the intricate pathways of the future pertaining to non-renewable energy, it is of utmost significance to wholeheartedly acknowledge and underscore the pivotal role that education, innovation, and comprehensive policy frameworks play in shaping the trajectory."+"\n"+"Towards a sustainable and regenerative energy landscape. Education, serving as a cornerstone, assumes an indispensable position in this transformative journey, as it acts as an empowering catalyst in raising societal awareness. Finally, the formulation and implementation of robust policy frameworks, reverberating harmoniously at both the national and international levels, emerge as indispensable guiding forces that muster the collective will, incentivize behavioral change, and drive the inexorable transition towards renewable energy.");
+                   
+                   Key_Master1.canvas.setText(level60.toString());
+                   Key_Master1.canvas.addKeyListener(w);
+                   w.processQuestion(level60.toString());
+                   Key_Master1.submit.addActionListener(w);
+               }
+               catch(Exception detect){
+                   System.out.println(detect);
+               }
+           }
+       });
+   }
+   
+   @Override
+   public void AboutTheSoftware(){
+       
+   }
    
    
    
@@ -2418,6 +3611,8 @@ public class Levels1 {
    
     public static void main(String[] args) throws Exception{
         UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
+        //Working w = new Working();
+        //w.backButton();
         Levels1 lev1 = new Levels1();
         lev1.openPlayground1();
         lev1.openPlayground2();
@@ -2459,8 +3654,26 @@ public class Levels1 {
         lev1.openPlayground38();
         lev1.openPlayground39();
         lev1.openPlayground40();
+        lev1.openPlayground41();
+        lev1.openPlayground42();
+        lev1.openPlayground43();
+        lev1.openPlayground44();
+        lev1.openPlayground45();
+        lev1.openPlayground46();
+        lev1.openPlayground47();
+        lev1.openPlayground48();
+        lev1.openPlayground49();
+        lev1.openPlayground50();
+        lev1.openPlayground51();
+        lev1.openPlayground52();
+        lev1.openPlayground53();
+        lev1.openPlayground54();
+        lev1.openPlayground55();
+        lev1.openPlayground56();
+        lev1.openPlayground57();
+        lev1.openPlayground58();
+        lev1.openPlayground59();
+        lev1.openPlayground60();
     }
-    
-    
     
 }

@@ -32,6 +32,7 @@ import java.io.IOException;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.event.KeyAdapter;
+import javax.swing.JFrame;
 import javax.swing.KeyStroke;
 
 public  class Working implements KeyListener,ActionListener{
@@ -39,12 +40,16 @@ public  class Working implements KeyListener,ActionListener{
     String getData,user;  //Default Access Modifier
     public static int count,mispelledWords; //public Access Modifier and static variable 
     public static String getQuestion = " "; //public Access Modifier and static variable
-    public static boolean ctrlPressed,cPressed,xPressed,control_Pressed;
+    public static boolean ctrlPressed,cPressed,xPressed;
     //public static boolean controlPressed,cClicked,xClicked,vPressed;
-    byte display,dialog,open;
+    //public boolean controlPressed, vPressed, cClicked, xClicked, control_Pressed;
+    byte display,dialog,open,show;
+    public boolean oneTime;
+   // public boolean control_Pressed;
     
-    public Key_Master1 key;  //To Access Another Class's Variable Create Variable for Superclass
+    public Key_Master1 key;  //To Access Another Class's Variable Create Variable for Superclass.
     
+    public Levels1 level1;
     
     //public Working(Key_Master1 key){
        // this.key = key;
@@ -99,7 +104,10 @@ public  class Working implements KeyListener,ActionListener{
                 break;
             
             case KeyEvent.VK_C:
+                if(show == 0){
                 cPressed = true;
+                }
+                show = 1;
                 break;
                 
             case KeyEvent.VK_X:
@@ -149,7 +157,7 @@ public  class Working implements KeyListener,ActionListener{
         try{
         getQuestion = question;
         String words[] = question.split(" ");
-        System.out.println("From question: "+question);
+        System.out.println("From question : "+question);
         System.err.println("--------------------------------");
         System.err.println("Words Count : "+words.length);
         System.err.println("--------------------------------");
@@ -172,6 +180,7 @@ public  class Working implements KeyListener,ActionListener{
             boolean cClicked = false;
             boolean xClicked = false;
             boolean ctrlPressed = false;
+            boolean control_Pressed = false;
             
             @Override
             public void keyTyped(KeyEvent e) {
@@ -187,10 +196,13 @@ public  class Working implements KeyListener,ActionListener{
                         control_Pressed = true;
                         break;
                         
-                     case KeyEvent.VK_C:
+                    case KeyEvent.VK_C:
+                          //if(cClicked == true);
+                         //if(cClicked == false){
                         cClicked = true;
+                         //}
                         break;
-                       
+                   
                     case KeyEvent.VK_X:
                         xClicked = true;
                         break;
@@ -210,11 +222,11 @@ public  class Working implements KeyListener,ActionListener{
                     label.setForeground(Color.RED);
                     
                     if(dialog == 0){
-                    JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert", JOptionPane.OK_OPTION,icon);
+                    //JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert", JOptionPane.OK_OPTION,icon);
                     dialog = 1;
                     }
                    e.consume();
-                }
+               }
                 
                 if((control_Pressed && cClicked) || (controlPressed && xClicked)){
                 //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
@@ -227,13 +239,13 @@ public  class Working implements KeyListener,ActionListener{
                 label.setForeground(Color.RED);
                 
                 if(open == 0) {
-                JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert",JOptionPane.OK_OPTION,icon);
+                //JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert",JOptionPane.OK_OPTION,icon);
                 open = 1;
                 }
                 
                 e.consume();
                 
-            }
+           }
                 
        }
             
@@ -243,6 +255,11 @@ public  class Working implements KeyListener,ActionListener{
             }
             
         });
+                                
+                                
+                                //this.key.check.addActionListener(new ActionListener(){
+                                //    if()
+                                //});
         
         //Key_Master1.board.getInputMap().put(KeyStroke.getKeyStroke("Control V"),"none");
     }
@@ -330,6 +347,43 @@ public  class Working implements KeyListener,ActionListener{
             JOptionPane.showMessageDialog(this.key.con,misspelled,"Alert",JOptionPane.OK_OPTION,wrong);
         } 
     }
+    
+    
+     public void backButton() throws NumberFormatException{
+        this.key.check.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                try{
+                 int state = level1.frame.getState();
+                 if((state & JFrame.ICONIFIED) != 0){
+                    System.out.println("Level1's JFrame is Minimized");
+                 }
+                 else
+                 {
+                    System.out.println("Levels1's JFrame is not Minimized");
+                 }
+                }
+                catch(NullPointerException npe){
+                    System.out.println(npe);
+                } 
+            }
+            });
+     }
+     
+     public void methodCall(){
+         backButton();
+     }
+     
+           /* private class level1 {
+
+                public level1() {
+                }
+            }
+        });
+    }*/
+     
+     //static{
+        // backButton();
+     //}
     
    /* public void KeyPressed(KeyEvent e){
         switch(e.getKeyCode()){
@@ -1147,6 +1201,12 @@ public  class Working implements KeyListener,ActionListener{
             //System.out.println(dictionary);
            //}
         //System.out.println("---------------------------------");
-    }   
+    }
+    
+    
+ /*  public static void main(String[] args){
+        Working w = new Working();
+        w.backButton();
+    }*/
        
 }

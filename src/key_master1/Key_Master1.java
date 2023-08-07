@@ -30,6 +30,7 @@ public class Key_Master1{
    public Key_Master1() throws Exception{
         //Main Frame Configuration Starts Here.....
         con  = new JFrame("Keyboard Master");
+        //con.setAlwaysOnTop(true);
         con.setSize(1450,800);
         GroupLayout group = new GroupLayout(con);
         con.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -135,15 +136,20 @@ public class Key_Master1{
       
     public static void main(String[] args) throws Exception {
         UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
+        //UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
         Key_Master1 km = new Key_Master1(); //Project's Core GUI - Graphical User Interface
         //Project's Core Class objects starts
         Working w = new Working();
+        //Levels1 levels1 = new Levels1();
         w.key = km; //Working Class(Object).In Working Class Key_Master1(Object) = Key_Master1 Class(Object)
         //w.addTextAreaListener();
         km.canvas.addKeyListener(w);
         km.submit.addActionListener(w);
         km.canvas.setText( "Mastering typing can be challenging");
         w.processQuestion(km.canvas.getText());
+        //w.backButton();
+        km.check.addActionListener(w);
+        //w.methodCall();
         //w.prevent();
         //w.addCopyTextKeyListener();
         //km.addCopyTextKeyListener(km.canvas);
