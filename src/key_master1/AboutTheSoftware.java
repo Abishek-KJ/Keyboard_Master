@@ -28,7 +28,7 @@ public interface AboutTheSoftware{
 
 
 
-public class about implements AboutTheSoftware{
+/*public class about implements AboutTheSoftware{
     
     JFrame frame;
     JLabel aboutInformations[];
@@ -42,6 +42,11 @@ public class about implements AboutTheSoftware{
         frame = new JFrame();
         frame.setTitle("About");
         frame.setBackground(Color.GRAY);
+        frame.setLocationRelativeTo(null);
+        frame.setAlwaysOnTop(true); 
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(800,500);
+        frame.setVisible(true); 
         
         
         
@@ -49,5 +54,14 @@ public class about implements AboutTheSoftware{
         
     }
     
+    public static void main(String...args){
+        
+         about about = new AboutTheSoftware();
+         about.AboutTheSoftware();
+         
+    }
     
-}
+    
+    
+    
+}*/

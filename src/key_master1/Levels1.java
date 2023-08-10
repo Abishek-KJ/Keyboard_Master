@@ -32,7 +32,7 @@ import javax.swing.JButton;
 //import javax.swing.JOptionPane.INFORMATION_MESSAGE;
 import javax.swing.JOptionPane;
 
-public class Levels1 implements AboutTheSoftware {
+public class Levels1 {
     
     public Key_Master1 key;
     
@@ -42,7 +42,7 @@ public class Levels1 implements AboutTheSoftware {
     JTabbedPane tabbedPane;
     JPanel beginner1,beginner2,intermediate1,intermediate2,expertise1,expertise2;
     Image icon;
-    JTextField coordinations1,coordinations2,coordinations3,coordinations4,coordinations5,coordinations6;
+    public  JTextField coordinations1,coordinations2,coordinations3,coordinations4,coordinations5,coordinations6;
     
     //Beginner - I variable declaration starts here......
     
@@ -110,8 +110,10 @@ public class Levels1 implements AboutTheSoftware {
     
     JButton aboutTheSoftware[]; 
     ImageIcon information;
-    JLabel aboutTheSoftware[];
-    JFrame about;
+    int buttonCount; 
+    
+   // JLabel aboutTheSoftware[];
+    //JFrame about;
     
     
     //JButton[] aboutTheSoftware;
@@ -122,7 +124,7 @@ public class Levels1 implements AboutTheSoftware {
     
     
     
-    Levels1(){
+    public Levels1(){ 
         frame = new JFrame();
         frame.setTitle("Keyboard Master");
         frame.setSize(1450,800);
@@ -1533,7 +1535,7 @@ public class Levels1 implements AboutTheSoftware {
    
    information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_New.png");
    
-  int buttonCount = 6;
+  buttonCount = 6; 
   aboutTheSoftware = new JButton[buttonCount];
    
   // int length = 6;
@@ -3586,12 +3588,10 @@ public class Levels1 implements AboutTheSoftware {
        });
    }
    
-   @Override
+  /* @Override
    public void AboutTheSoftware(){
        
-   }
-   
-   
+   }*/ 
    
    
    
