@@ -46,6 +46,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
    int labelCount; 
    Font fontSpecifications; 
    JTextField coordinations; 
+   ImageIcon information; 
    //JTextField Coordinations; 
    
    
@@ -61,6 +62,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        //Image Configuration Starts Here..............
        
        icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png");
+       information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_Bigsize.png"); 
        
        //Image Configuration Ends Here..................
        
@@ -88,7 +90,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        //About Information Starts Here.....................
        
        
-       labelCount = 13;
+       labelCount = 13;  
        
        aboutInformations = new JLabel[labelCount]; 
        
@@ -99,6 +101,65 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
            aboutInformations[i].setForeground(Color.WHITE); 
            
        }
+       
+       //information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_Bigsize.png"); 
+       aboutInformations[0].setIcon(information); 
+       aboutInformations[0].setFont(new Font("arial",Font.PLAIN,30));   
+       aboutInformations[0].setText("About"); 
+       aboutInformations[0].setBounds(320,10,150,50);   
+       
+       aboutInformations[1].setFont(new Font("arial",Font.BOLD,20)); 
+       aboutInformations[1].setText("A Platform-Independent and Portable Software for Enhance your Typing Skills."); 
+       aboutInformations[1].setBounds(25,55,800,50); 
+       
+       
+       aboutInformations[2].setText("Software Name"); 
+       
+       aboutInformations[3].setText("Version Number");
+       
+       aboutInformations[4].setText("Release Date");
+       
+       aboutInformations[5].setText("Runs on");
+       
+       aboutInformations[6].setText("Build and developed by");
+       
+       
+       //int y = 70;
+       
+       int yStart, yEnd; 
+       
+       //yStart = 70;
+       
+       yEnd = 245; 
+       
+       for(int i = 2, y = 90; i <= 6 && y <= yEnd; i = i+1, y = y+35){  
+           aboutInformations[i].setBounds(170,y,280,50); 
+       }
+       
+       
+       for(int i = 7, y = 90; i <= 12 && y <= yEnd; i = i+1, y = y+35){
+           aboutInformations[i].setText(":");
+           aboutInformations[i].setBounds(390,y,20,50); 
+       }
+       
+       
+       aboutInformations[13].setText("Keyboard Master"); 
+       
+       aboutInformations[14].setText("1.0.0"); 
+       
+       aboutInformations[15].setText("31/08/2023"); 
+       
+       aboutInformations[16].setText("Windows,Linux,Unix,MacOS"); 
+       
+       aboutInformations[17].setText("K.J.Abishek"); 
+       
+       for(int i = 13, y = 90; i <= 18 && y <= yEnd; i = i+1, y = y+35){
+           
+       } 
+       
+       
+       
+       
        
        
        
@@ -132,11 +193,13 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        //JTextField Configuration Starts Here...............................
        
-       coordinations = new JTextField(); 
-       coordinations.setFont(fontSpecifications);  
-       coordinations.setBounds(0,500,100,100); 
+      //coordinations = new JTextField(); 
+      //coordinations.setFont(fontSpecifications);  
+      //coordinations.setBounds(0,500,100,100); 
        
-       
+      coordinations  = new JTextField();
+      coordinations.setFont(new Font("arial",Font.BOLD,13));  
+      coordinations.setBounds(5,430,290,30);   
        
        
        
@@ -164,6 +227,11 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        frame.add(coordinations); 
        
        
+       for(int i = 0; i < labelCount; i++){
+           frame.add(aboutInformations[i]); 
+       }
+       
+       
        frame.setVisible(true); 
        
        //JFrame Configuration Ends Here.............
@@ -189,7 +257,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
                  
                //this.levels1.coordinations1.setText("X - Coordinations : "+x+" "+"Y - Coordinations : "+y);
                
-               coordinations.setText("X - Coordinations : "+x+"Y - Coordinations : "+y); 
+               coordinations.setText("X - Coordinate : "+x+" Y - Coordinate : "+y); 
                
            } 
 
