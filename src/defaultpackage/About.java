@@ -69,8 +69,10 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        frame.setTitle("About the software");
        frame.setResizable(false); 
        frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
+       frame.setLayout(null); 
        frame.setSize(800,500);
        frame.getContentPane().setBackground(Color.GRAY); 
+       //frame.setBackground(Color.GRAY); 
        frame.setAlwaysOnTop(true); 
        frame.setLocationRelativeTo(null); 
       
