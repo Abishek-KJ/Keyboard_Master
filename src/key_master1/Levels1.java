@@ -49,7 +49,7 @@ public class Levels1 {
     JLabel beginner;
     JLabel level1, level2, level3, level4, level5, level6, level7, level8, level9, level10;
     JButton open1,open2, open3, open4, open5, open6, open7, open8, open9, open10;
-    ImageIcon beginnerStar, play;
+    ImageIcon beginnerStar, play; 
      
     //Beginner - I variable declaration ends here.....
     

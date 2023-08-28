@@ -161,7 +161,7 @@ public  class Working implements KeyListener,ActionListener{
         System.err.println("--------------------------------");
         System.err.println("Words Count : "+words.length);
         System.err.println("--------------------------------");
-        count = 1;
+        count = 1; 
         for(String word : words){           
             System.out.println("Words "+count+++" : "+word);
             String dictionary = dictionary(word);
@@ -273,7 +273,7 @@ public  class Working implements KeyListener,ActionListener{
         String line;
         while((line=reader.readLine()) != null){
            if(line.equalsIgnoreCase(search)){
-               System.out.println("This is spelled by Correctly(Compared with dictionary)");
+               System.out.println("This word is spelled Correctly(Compared with dictionary)"); 
                return search;
            }
         }

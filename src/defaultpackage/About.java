@@ -1,3 +1,5 @@
+package defaultpackage;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -30,7 +32,7 @@ import javax.swing.JTextField;
 
 
 
-public class About extends Levels1 implements AboutTheSoftware{         //Multiple Inheritance 
+public class About implements AboutTheSoftware{       //Multiple Inheritance 
     
     
    public Levels1 levels1; 

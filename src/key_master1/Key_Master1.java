@@ -58,7 +58,7 @@ public class Key_Master1{
       canvas.setBounds(30,60,1375,300);
       canvas.setFont(new Font("arial",Font.BOLD,20));
       canvas.setLineWrap(true);
-      canvas.setEditable(false);
+      canvas.setEditable(false); 
       canvas.setWrapStyleWord(true); //To Wrap around word boundaries
       MutableAttributeSet space = new SimpleAttributeSet();
       StyleConstants.setLineSpacing(space, 10);
