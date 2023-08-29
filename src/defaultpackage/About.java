@@ -46,7 +46,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
    int labelCount; 
    Font fontSpecifications; 
    JTextField coordinations; 
-   ImageIcon information; 
+   ImageIcon information, feedback, feedback1; 
    //JTextField Coordinations; 
    
    
@@ -63,7 +63,8 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png");
        information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_Bigsize.png"); 
-       
+       feedback = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Feedback.jpg"); 
+       feedback1 = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Feedback1.jpg");
        //Image Configuration Ends Here..................
        
        
@@ -159,6 +160,8 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[18].setText("Feedback? or Contact?"); 
        
+       aboutInformations[18].setToolTipText("Feedback? or Contact?  ");  
+       
        aboutInformations[20].setText("Scan the QR Code"); 
        
        int Start, getStartX, getEndX, getStartY, getEndY;
@@ -189,10 +192,13 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
            
        } 
        
+      //aboutInformations[19].setIcon(feedback1);  
        
+      aboutInformations[19].setIcon(feedback); 
       
-       
-       
+      aboutInformations[19].setToolTipText("Feedback? or Contact?  ");            
+      
+      aboutInformations[19].setBounds(325,278,380,190); 
        
        
        
