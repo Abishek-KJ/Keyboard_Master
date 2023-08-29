@@ -90,7 +90,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        //About Information Starts Here.....................
        
        
-       labelCount = 13;  
+       labelCount = 21; 
        
        aboutInformations = new JLabel[labelCount]; 
        
@@ -110,7 +110,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[1].setFont(new Font("arial",Font.BOLD,20)); 
        aboutInformations[1].setText("A Platform-Independent and Portable Software for Enhance your Typing Skills."); 
-       aboutInformations[1].setBounds(25,55,800,50); 
+       aboutInformations[1].setBounds(26,55,800,50); 
        
        
        aboutInformations[2].setText("Software Name"); 
@@ -153,14 +153,41 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[17].setText("K.J.Abishek"); 
        
-       for(int i = 13, y = 90; i <= 18 && y <= yEnd; i = i+1, y = y+35){
+       for(int i = 13, y = 90; i <= 17 && y <= yEnd; i = i+1, y = y+35){ 
+           aboutInformations[i].setBounds(405,y,270,50); 
+       }
+       
+       aboutInformations[18].setText("Feedback? or Contact?"); 
+       
+       aboutInformations[20].setText("Scan the QR Code"); 
+       
+       int Start, getStartX, getEndX, getStartY, getEndY;
+       
+       Start = 18; 
+       
+       getStartX = 275; 
+       
+       getEndX = 295; 
+       
+       getStartY = 275; 
+       
+       getEndY = 420; 
+       
+       while(Start <= 20 && getStartX <= getEndX && getStartY <= getEndY){
+           aboutInformations[Start].setBounds(getStartX,getStartY,250,50); 
+           
+           Start = Start+2; 
+           
+           
+           
+           getStartX = getStartX+20; 
+           
+           
+           
+           getStartY = getStartY+145; 
+           
            
        } 
-       
-       
-       
-       
-       
        
        
       
@@ -224,7 +251,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        
        
-       frame.add(coordinations); 
+       //frame.add(coordinations); 
        
        
        for(int i = 0; i < labelCount; i++){
