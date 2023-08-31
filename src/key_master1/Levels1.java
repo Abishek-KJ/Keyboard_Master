@@ -4,6 +4,8 @@
  */
 package key_master1;
 
+//package defaultpackage; 
+
 /**
  *
  * @author Lenovo
@@ -31,12 +33,16 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 //import javax.swing.JOptionPane.INFORMATION_MESSAGE;
 import javax.swing.JOptionPane;
+import defaultpackage.About; 
 
-public class Levels1 {
+
+public class Levels1 { 
     
-    public Key_Master1 key;
+    public Key_Master1 key; 
     
-    public Working w;
+    public Working w; 
+    
+    public About about; 
     
     JFrame frame;
     JTabbedPane tabbedPane;
@@ -3594,7 +3600,150 @@ public class Levels1 {
    }*/ 
    
    
+   //for(Object )
    
+   boolean visible = true; 
+
+   
+   public void feedback(){
+      /* for(int i = 0; i <= 5; i++){
+           aboutTheSoftware[i].addActionListener(new ActionListener(){
+               
+           });*/
+      
+          /* for(JButton button : aboutTheSoftware){
+                aboutTheSoftware[button].addActionListener(new ActionListener(){
+                   public void actionPerformed(ActionEvent e){
+                       
+                   } 
+                });*/
+                
+         /*  for(JButton button : aboutTheSoftware){
+               aboutTheSoftware[button].addActionListener(new ActionListener(){
+                   public void actionPerformed(ActionEvent e){
+                       
+                   }
+           });*/
+         
+            /* for(int button : aboutTheSoftware){
+                 aboutTheSoftware[button].addActionListener(new ActionListener(){
+                     
+                 }); */
+            
+             for(JButton button : aboutTheSoftware){
+                 button.addActionListener(new ActionListener(){
+                    public void actionPerformed(ActionEvent e){
+                        About about = new About(); 
+                        
+                       //if(About.frame ) 
+                       
+                  /*  if(about.frame.isVisible() == false){
+                        about.AboutTheSoftware(); 
+                    }
+                    
+                    if(!about.frame.isVisible()){
+                        about.AboutTheSoftware(); 
+                    }*/ 
+                    
+                   /* if(!about.frame.isVisible()){
+                        //frame = new JFrame();
+                        about.AboutTheSoftware(); 
+                    } */ 
+                    
+                   /* if(!about.frame.isVisible()){
+                        AboutTheSoftware(); 
+                        
+                    }*/
+                   
+                  /* if(about.frame.isVisible() == false){
+                       about.AboutTheSoftware(); 
+                   }
+                   
+                   if(about.frame.isShowing()){
+                       about.AboutTheSoftware(); 
+                   } */ 
+                    
+                  /* if(about.frame.isShowing() == false){
+                       about.AboutTheSoftware(); 
+                   } */ 
+                   
+                  /* if(!about.frame.isShowing()){
+                       about.AboutTheSoftware(); 
+                   }
+                   
+                   if(about.frame.isShowing()){
+                       frame.hide(); 
+                   }*/
+                  
+                  /*if(about.frame.isVisible()){
+                      
+                  }
+                  else{ 
+                      about.AboutTheSoftware(); 
+                  }*/
+                  
+                  /*if(!about.frame.isVisible()){  
+                       about.frame.setVisible(true); 
+                       about.AboutTheSoftware(); 
+                   }*/
+                  
+                  /*  if(!about.frame.isVisible()){ 
+                        about.frame.setVisible(true); 
+                        about.AboutTheSoftware(); 
+                        about.frame.setVisible(false); 
+                    } */ 
+                  
+                  /* int visible = 50; 
+                   
+                   boolean visible = true; */ 
+                   
+                  /* boolean visible = true; */ 
+                  
+                  /* if(visible){ 
+                       about.AboutTheSoftware(); 
+                       
+                       visible = false; 
+                   } 
+                   
+                   if(visible){
+                       about.AboutTheSoftware(); 
+                   } 
+                   
+                   visible = false; */
+                   
+                  /* if(visible){ 
+                       about.AboutTheSoftware();  
+                   } 
+                   
+                   visible = false; */
+                  
+                  /*  if(visible == true){
+                       about.AboutTheSoftware(); 
+                       visible = false; 
+                   }*/ 
+                   
+                   
+                  /* if(visible == true){
+                       about.AboutTheSoftware();  
+                   } */
+                   
+                  /*  visible = false; */ 
+                   
+                  /* visible = false; */ 
+                  
+                  about.AboutTheSoftware(); 
+                   
+                   
+                   
+                  System.out.println(about.frame.isVisible()); 
+                   
+                    }
+                 });
+                 
+         
+         
+       }
+   }
    
    
    
@@ -3674,6 +3823,9 @@ public class Levels1 {
         lev1.openPlayground58();
         lev1.openPlayground59();
         lev1.openPlayground60();
+        lev1.feedback(); 
+        
+        
     }
     
 }

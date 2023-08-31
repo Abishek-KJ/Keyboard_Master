@@ -39,8 +39,9 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
     
     //About the software variable declaration starts here..................
    
-    
-   JFrame frame;  
+   //public JFrame frame;
+   public JFrame frame = new JFrame(); 
+   //JFrame frame;  
    JLabel aboutInformations[]; 
    Image icon;
    int labelCount; 
@@ -164,6 +165,8 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[20].setText("Scan the QR Code"); 
        
+       aboutInformations[20].setToolTipText("Scan the QR Code ");    
+       
        int Start, getStartX, getEndX, getStartY, getEndY;
        
        Start = 18; 
@@ -265,6 +268,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        }
        
        
+       //frame.setVisible(true);  
        frame.setVisible(true); 
        
        //JFrame Configuration Ends Here.............
