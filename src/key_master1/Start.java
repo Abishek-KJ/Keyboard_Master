@@ -136,36 +136,56 @@ public class Start {
               try{
               Levels1 lev1 = new Levels1(); 
               
-              AboutTheSoftware about = new About(); 
+              //AboutTheSoftware about = new About(); 
               
               Method[] methods = lev1.getClass().getDeclaredMethods(); 
               
               //Method[] methods = about.getClass().getDeclaredMethods(); 
               
               for(Method method : methods){
-                   if(method.getName().startsWith("openPlayground")){
+                   if(method.getName().startsWith("openPlayground") || method.getName().startsWith("feedback")){     
                       method.invoke(lev1, (Object[]) null); 
                    } 
                    
-                   if(method.getName().startsWith("AboutTheSoftware")){ 
+                   /*if(method.getName().startsWith("AboutTheSoftware")){ 
                        method.invoke(about, (Object[]) null); 
-                   } 
+                   }*/  
               }
               }
               catch(Exception exception){
                   System.out.println(exception); 
               }
               
-              //AboutTheSoftware about = new About(); 
-              //about.AboutTheSoftware(); 
+           /*    try{
               
-               
-           }
+              AboutTheSoftware about = new About(); 
+              
+              Method[] methods1 = about.getClass().getDeclaredMethods(); 
+              
+              for(Method method : methods1){
+                  if(method.getName().startsWith("About")){ 
+                      method.invoke(about, (Object[]) null); 
+                  } 
+              }
+              
+              } 
+              catch(Exception exception){
+                  System.out.println(exception); 
+              } 
+              
+              AboutTheSoftware about = new About(); 
+              about.AboutTheSoftware(); 
+              
+       }   */ 
+           } 
+           
        });
        
        timer.setRepeats(false); 
        timer.start(); 
        
+}
+
        
      // Levels1 levels1 = new Levels();  
       
@@ -178,7 +198,8 @@ public class Start {
         
         
         
-    }
+    
+
     
     
     public static void main(String[] args) throws Exception{ 

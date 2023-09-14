@@ -3607,7 +3607,7 @@ public class Levels1 {
    
    public void feedback(){
       /* for(int i = 0; i <= 5; i++){
-           aboutTheSoftware[i].addActionListener(new ActionListener(){
+           aboutTheSoftware[i].addActionListener(new ActionListener(){ 
                
            });*/
       
@@ -3824,6 +3824,8 @@ public class Levels1 {
         lev1.openPlayground59();
         lev1.openPlayground60();
         lev1.feedback(); 
+        AboutTheSoftware about = new About(); 
+        about.AboutTheSoftware(); 
         
         
     }
