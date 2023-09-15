@@ -43,7 +43,7 @@ public class Start {
     
     Start(){ 
         
-        //JFrame Configuration Starts Here...................
+        //JFrame Configuration Starts Here................... 
         
         
        frameStart = new JFrame(); 
@@ -59,9 +59,12 @@ public class Start {
         
        iconStart = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png"); */ 
        
-       iconStart = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png"); 
+     //  iconStart = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png"); 
+       iconStart = Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("Icon.png")); 
        
-       loading = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Introduction.gif"); 
+       
+     //  loading = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Introduction.gif"); 
+       loading = new ImageIcon(getClass().getClassLoader().getResource("Introduction.gif")); 
        
        
        frameStart = new JFrame(); 

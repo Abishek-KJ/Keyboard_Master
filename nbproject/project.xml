@@ -5,6 +5,7 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>Key_Master1</name>
             <source-roots>
+                <root id="src.java.dir"/>
                 <root id="src.Resources.dir"/>
                 <root id="src.defaultpackage.dir"/>
                 <root id="src.key_master1.dir"/>

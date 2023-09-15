@@ -142,18 +142,20 @@ public class Levels1 {
         frame.getContentPane().setBackground(Color.GRAY);
         frame.setLayout(null);
         
-        icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png");
+       // icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png"); 
+        icon = Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("Icon.png")); 
         
         frame.setIconImage(icon);
         
         
-        play = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Play.png");
-        
+       // play = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Play.png"); 
+        play = new ImageIcon(getClass().getClassLoader().getResource("Play.png")); 
         
         
         //Beginner - I Configuration starts here.............
         
-        beginnerStar = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Beginner_Star.png");
+       // beginnerStar = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Beginner_Star.png"); 
+        beginnerStar = new ImageIcon(getClass().getClassLoader().getResource("Beginner_Star.png")); 
         
         
         
@@ -617,7 +619,8 @@ public class Levels1 {
         
         //Intermediate - I Configuration starts here..............
         
-        intermediateStar = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Twostars.png");
+       // intermediateStar = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Twostars.png"); 
+        intermediateStar = new ImageIcon(getClass().getClassLoader().getResource("Twostars.png")); 
         
         
         intermediateLevel1 = new JLabel();
@@ -1539,7 +1542,8 @@ public class Levels1 {
    
    //About the software configuration starts here....................
    
-   information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_New.png");
+  // information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_New.png"); 
+   information = new ImageIcon(getClass().getClassLoader().getResource("Information_New.png"));   
    
   buttonCount = 6; 
   aboutTheSoftware = new JButton[buttonCount];

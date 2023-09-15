@@ -64,10 +64,14 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        //Image Configuration Starts Here..............
        
-       icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png");
-       information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_Bigsize.png"); 
-       feedback = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Feedback.jpg"); 
-       feedback1 = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Feedback1.jpg");
+      // icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png"); 
+       icon = Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("Icon.png")); 
+      // information = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Information_Bigsize.png"); 
+       information = new ImageIcon(getClass().getClassLoader().getResource("Information_Bigsize.png")); 
+      // feedback = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Feedback.jpg"); 
+       feedback = new ImageIcon(getClass().getClassLoader().getResource("Feedback.jpg")); 
+      // feedback1 = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Feedback1.jpg"); 
+       feedback1 = new ImageIcon(getClass().getClassLoader().getResource("Feedback1.jpg")); 
        //Image Configuration Ends Here..................
        
        
