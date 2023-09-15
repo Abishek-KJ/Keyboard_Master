@@ -32,8 +32,10 @@ import javax.swing.JTextField;
 
 
 
-public class About implements AboutTheSoftware{       //Multiple Inheritance 
+public class About implements AboutTheSoftware{       //Multiple Inheritance  
     
+//    public class About{  
+     
     
    public Levels1 levels1; 
     

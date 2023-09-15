@@ -1,0 +1,19 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\Lenovo\OneDrive\Documents\NetBeansProjects\Key_Master1\src\key_master1\Keyboard Master.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\Lenovo\OneDrive\Documents\NetBeansProjects\Key_Master1\src\key_master1\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-17.0.3.1
+Check launcher:	C:\Program Files\Java\jdk-17.0.3.1\bin\javaw.exe (OK)
+Warning:	formatJavaVersion() too many parts added.
+Version string: 1.017.000_003 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-17.0.3.1\bin\javaw.exe
+Launcher args:	-jar "C:\Users\Lenovo\OneDrive\Documents\NetBeansProjects\Key_Master1\src\key_master1\Keyboard Master.exe"
+Args length:	106/32768 chars
+Exit code:	0
