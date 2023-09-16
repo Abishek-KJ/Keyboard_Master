@@ -47,7 +47,8 @@ public class Key_Master1{
        
        
        //Icon Configuration Starts Here.....
-       icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png");
+     //  icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Icon.png"); 
+          icon = Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("Icon.png")); 
        con.setIconImage(icon);
        //Icon Configuration Ends Here....
        

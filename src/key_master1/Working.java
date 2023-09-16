@@ -33,7 +33,10 @@ import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.event.KeyAdapter;
 import javax.swing.JFrame;
-import javax.swing.KeyStroke;
+import javax.swing.KeyStroke; 
+import java.io.InputStream; 
+import java.io.InputStreamReader; 
+
 
 public  class Working implements KeyListener,ActionListener{
     //String paragraph = "Example";
@@ -117,10 +120,10 @@ public  class Working implements KeyListener,ActionListener{
         
         
         if((ctrlPressed  && cPressed) || (ctrlPressed && xPressed)){
-            System.out.println("From User Log : Control + C and Control + X is Blocked, So Don't Cheat");
+            System.out.println("From User Log : Control + C and Control + X is Blocked, So Don't Cheat"); 
             
-            ImageIcon icon = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Stop.png");
-            
+           // ImageIcon icon = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Stop.png"); 
+            ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("Stop.png")); 
             JLabel label = new JLabel("Copy Text and Cut Text is Blocked");
             label.setFont(new Font("arial",Font.BOLD,30));
             label.setForeground(Color.RED);
@@ -215,7 +218,8 @@ public  class Working implements KeyListener,ActionListener{
                 if(ctrlPressed && vPressed){
                     System.out.println("From User Log : Control + V is Blocked");
                     
-                    ImageIcon icon = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Stop.png");
+                   // ImageIcon icon = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Stop.png"); 
+                    ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("Stop.png")); 
                     
                     JLabel label = new JLabel("Paste Text is Blocked");
                     label.setFont(new Font("arial",Font.BOLD,30));
@@ -232,7 +236,8 @@ public  class Working implements KeyListener,ActionListener{
                 //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
                 System.out.println("From User Log : Control + C and Control + X, is Blocked");
                 
-                ImageIcon icon = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Wrong.png");
+               // ImageIcon icon = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Wrong.png"); 
+                ImageIcon wrongIcon = new ImageIcon(getClass().getClassLoader().getResource("Stop.png")); 
                 
                 JLabel label = new JLabel("Copy Text and Cut Text is Blocked");
                 label.setFont(new Font("arial", Font.BOLD,30));
@@ -267,10 +272,23 @@ public  class Working implements KeyListener,ActionListener{
                            
                                         
     public static  String dictionary(String search){ //declared static keyword to avoid object creation error
-        try{
-         System.out.println("Execution Starts");
-        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/words_alpha.txt"));
-        String line;
+      //  try{ 
+         System.out.println("Execution Starts"); 
+      //  BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/words_alpha.txt")); 
+       // BufferedReader reader = new BufferedReader(new FileReader(getClass().getClassLoader().getResource("words_alpha.txt"))); 
+      //  BufferedReader reader = new BufferedReader(getClass().getClassLoader().getResource("words_alpha.txt")); 
+       // BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\Resources/words_alpha.txt")); 
+       // InputStream reader = this.getClass().getResourceAsStream("/Resource/words_alpha.txt"); 
+       // InputStream reader = this.getClass().getResource("/Resource/words_alpha.txt"); 
+         // InputStream reader = LoadTextFile.class.getClassLoader().getResourceAsStream("words_alpha.txt"); 
+          // InputStream reader = working.class.getClassLoader().getResourceAsStream("words_alpha.txt"); 
+          // InputStream reader = Working.class.getClassLoader().getResourceAsStream("words_alpha.txt"); 
+           InputStream referenceFile = Working.class.getClassLoader().getResourceAsStream("words_alpha.txt"); 
+        
+        String line; 
+        
+       try(BufferedReader reader = new BufferedReader(new InputStreamReader(referenceFile))){ 
+      
         while((line=reader.readLine()) != null){
            if(line.equalsIgnoreCase(search)){
                System.out.println("This word is spelled Correctly(Compared with dictionary)"); 
@@ -280,10 +298,10 @@ public  class Working implements KeyListener,ActionListener{
         System.out.println("This word is misspelled(Compared with dictionary)");
         reader.close();
         count = count+1;
-        }
-        catch(IOException detect){
-            System.out.println(detect);
-        }
+       }
+       catch(IOException detect){ 
+           System.out.println(detect); 
+       } 
         
          //count(mispelledWords); //methodName(argument name);
         return search;
@@ -328,8 +346,10 @@ public  class Working implements KeyListener,ActionListener{
         blank.setFont(new Font("arial",Font.BOLD,30));
         blank.setForeground(Color.BLACK);
         
-        ImageIcon party = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Party_Small.png");
-        ImageIcon wrong = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Wrong.png");
+       // ImageIcon party = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Party_Small.png"); 
+        ImageIcon party = new ImageIcon(getClass().getClassLoader().getResource("Party_Small.png")); 
+      //  ImageIcon wrong = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Wrong.png"); 
+        ImageIcon wrong = new ImageIcon(getClass().getClassLoader().getResource("Wrong.png")); 
         
         //Blank JTextArea
         if(user.isBlank()){
