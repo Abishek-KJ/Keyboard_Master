@@ -1865,36 +1865,42 @@ public class Levels1 {
         
         coordinations1 = new JTextField();
         coordinations1.setFont(new Font("arial", Font.BOLD, 13));
-        coordinations1.setBounds(5,700,290,30);
+        coordinations1.setBounds(5,700,290,30); 
+        coordinations1.setVisible(false); 
         
         
         coordinations2 = new JTextField();
         coordinations2.setFont(new Font("arial", Font.BOLD,  13));
-        coordinations2.setBounds(5,700,290,30);
+        coordinations2.setBounds(5,700,290,30); 
+        coordinations2.setVisible(false); 
         
         
         
         coordinations3 = new JTextField();
         coordinations3.setFont(new Font("arial", Font.BOLD, 13));
-        coordinations3.setBounds(5,700,290,30);
+        coordinations3.setBounds(5,700,290,30); 
+        coordinations3.setVisible(false); 
         
         
         
         coordinations4 = new JTextField();
         coordinations4.setFont(new Font("arial",Font.BOLD,13));
-        coordinations4.setBounds(5,700,290,30);
+        coordinations4.setBounds(5,700,290,30);  
+        coordinations4.setVisible(false); 
         
         
         
         coordinations5 = new JTextField();
         coordinations5.setFont(new Font("arial",Font.BOLD,13));
-        coordinations5.setBounds(5,700,290,30);
+        coordinations5.setBounds(5,700,290,30); 
+        coordinations5.setVisible(false); 
         
         
           
         coordinations6 = new JTextField();
         coordinations6.setFont(new Font("arial", Font.BOLD, 13));
-        coordinations6.setBounds(5,700,290,30);
+        coordinations6.setBounds(5,700,290,30); 
+        coordinations6.setVisible(false); 
         
         
         beginner1 = new JPanel();

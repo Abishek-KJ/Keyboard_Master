@@ -83,8 +83,11 @@ public class Key_Master1{
       check.setFont(new Font("arial",Font.BOLD,15));
       check.setBounds(30,20,75,30);
       check.setToolTipText("To Check the Spelling of Master Paragraph");
-      //check.doClick(1);
-      con.add(check);
+      //check.doClick(1); 
+      check.setVisible(false); 
+      con.add(check); 
+    //  con.add(check); 
+     // con.setVisible(false); 
       //check Configuration Ends Here.........
       
       //board Configuration Starts Here

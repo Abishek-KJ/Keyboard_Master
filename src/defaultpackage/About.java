@@ -155,7 +155,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[14].setText("1.0.0"); 
        
-       aboutInformations[15].setText("31/08/2023"); 
+       aboutInformations[15].setText("17/09/2023");  
        
        aboutInformations[16].setText("Windows,Linux,Unix,MacOS"); 
        
@@ -242,6 +242,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
       coordinations  = new JTextField();
       coordinations.setFont(new Font("arial",Font.BOLD,13));  
       coordinations.setBounds(5,430,290,30);   
+      coordinations.setVisible(false); 
        
        
        
@@ -266,7 +267,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        
        
-       //frame.add(coordinations); 
+       frame.add(coordinations); 
        
        
        for(int i = 0; i < labelCount; i++){

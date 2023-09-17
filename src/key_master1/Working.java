@@ -40,7 +40,7 @@ import java.io.InputStreamReader;
 
 public  class Working implements KeyListener,ActionListener{
     //String paragraph = "Example";
-    String getData,user;  //Default Access Modifier
+    String getData,user,message; //Default Access Modifier 
     public static int count,mispelledWords; //public Access Modifier and static variable 
     public static String getQuestion = " "; //public Access Modifier and static variable
     public static boolean ctrlPressed,cPressed,xPressed;
@@ -48,7 +48,7 @@ public  class Working implements KeyListener,ActionListener{
     //public boolean controlPressed, vPressed, cClicked, xClicked, control_Pressed;
     byte display,dialog,open,show;
     public boolean oneTime;
-   // public boolean control_Pressed;
+   // public boolean control_Pressed; 
     
     public Key_Master1 key;  //To Access Another Class's Variable Create Variable for Superclass.
     
@@ -130,7 +130,7 @@ public  class Working implements KeyListener,ActionListener{
         
             if(display == 0)
             {
-            JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert",JOptionPane.OK_OPTION,icon);
+            JOptionPane.showMessageDialog(Key_Master1.con,label,"Alert",JOptionPane.OK_OPTION,icon); 
             display = 1;
             }
             
@@ -333,13 +333,16 @@ public  class Working implements KeyListener,ActionListener{
        }
        }*/
         
-       // JLabel label = new JLabel("Correction : "+correction+" Try Again :)");
-        JLabel misspelled = new JLabel("There are some words misspelled typed here.\n Please double check before submitting");
+       // JLabel label = new JLabel("Correction : "+correction+" Try Again :)"); 
+       // String message; 
+        message = "There are some words misspelled. Please check "; 
+       // JLabel misspelled = new JLabel("There are some words misspelled typed here.\n Please double check before submitting"); 
+        JLabel misspelled = new JLabel(message); 
         misspelled.setFont(new Font("arial",Font.BOLD,30));
         misspelled.setForeground(Color.RED);
         
         
-        JLabel completed = new JLabel("Hurray! You've Successfully Completed :)");
+        JLabel completed = new JLabel("Hurray! You have Successfully Completed :)");   
         completed.setFont(new Font("arial",Font.BOLD,30));
         
         JLabel blank = new JLabel("Blank or Empty");
@@ -351,7 +354,8 @@ public  class Working implements KeyListener,ActionListener{
       //  ImageIcon wrong = new ImageIcon("C:\\Users\\Lenovo\\OneDrive\\Documents\\NetBeansProjects\\Key_Master1\\src\\key_master1/Wrong.png"); 
         ImageIcon wrong = new ImageIcon(getClass().getClassLoader().getResource("Wrong.png")); 
         
-        //Blank JTextArea
+        //Blank JTextArea 
+       //JTextArea Blank 
         if(user.isBlank()){
             JOptionPane.showMessageDialog(this.key.con,blank,"Blank or Empty",JOptionPane.INFORMATION_MESSAGE);
         }
