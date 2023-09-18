@@ -17,12 +17,13 @@
 
 ## Software Screenshots 
 
+### Screenshot:1 
  ![image](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/665e8067-7766-4676-b97b-2dff8884866a) 
 
-
+### Screenshot:2 
  ![2023-09-18 (3)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/6ec3f091-363a-4882-a2ce-b9553e453b26) 
 
-
+### Screenshot:3 
  ![2023-09-18 (8)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/9c7547ab-9b9a-40aa-9d5f-faf402f290a8) 
 
 
