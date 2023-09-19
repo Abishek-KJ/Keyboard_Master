@@ -19,7 +19,7 @@
 
 ### Screenshot:1 
  ![image](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/665e8067-7766-4676-b97b-2dff8884866a) 
- > When user opens the Software. 
+ > Levels are categorized 
  
 
 ### Screenshot:2 
