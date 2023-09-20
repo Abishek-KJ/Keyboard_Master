@@ -125,7 +125,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[3].setText("Version Number");
        
-       aboutInformations[4].setText("Release Date");
+       aboutInformations[4].setText("Released on");  
        
        aboutInformations[5].setText("Runs on");
        
@@ -155,7 +155,7 @@ public class About implements AboutTheSoftware{       //Multiple Inheritance
        
        aboutInformations[14].setText("1.0.0"); 
        
-       aboutInformations[15].setText("17/09/2023");  
+       aboutInformations[15].setText("19/09/2023");   
        
        aboutInformations[16].setText("Windows,Linux,Unix,MacOS"); 
        

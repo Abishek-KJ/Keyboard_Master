@@ -111,7 +111,7 @@ public class Key_Master1{
       submit.setText("Submit");
       submit.setFont(new Font("arial",Font.BOLD,15));
       submit.setBounds(1150,720,120,30);
-      submit.setToolTipText("Submit Text you Typed to Verify against Master Paragraph");
+      submit.setToolTipText("Submit Text to Verify against Question Paragraph  ");   
       //submit.doClick(1);
       con.add(submit);
       //submit Configuration Ends Here......
@@ -138,7 +138,7 @@ public class Key_Master1{
       }*/
 
       
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception { 
         UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
         //UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
         Key_Master1 km = new Key_Master1(); //Project's Core GUI - Graphical User Interface
@@ -149,7 +149,7 @@ public class Key_Master1{
         //w.addTextAreaListener();
         km.canvas.addKeyListener(w);
         km.submit.addActionListener(w);
-        km.canvas.setText( "Mastering typing can be challenging");
+        km.canvas.setText( "Welcome to Keyboard Master");  
         w.processQuestion(km.canvas.getText());
         //w.backButton();
         km.check.addActionListener(w);
