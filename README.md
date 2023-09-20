@@ -1,6 +1,6 @@
 # Keyboard Master using Java 
 
-## Introduction 
+## Description 
 
   Keyboard Master is a Java-based Standalone Software designed to help users to improve their typing skills through engaging exercises. This Platform-Independent and Portable tool leverages the Swing and Abstract Window Toolkit Packages for the Graphical User Interface, providing an intuitive and user-friendly experience. 
   
@@ -11,9 +11,9 @@
 
 ## How to run this Project ? 
 
-**Download the Executable File and Open in your Desktop or Laptop** 
+**Download the Executable File named Keyboard Master.exe and Open in your Desktop or Laptop** 
 
-**This Special Feature 'Platform-Independent and Portable' enables to run Software and does not require installation.**
+**This Special Feature 'Platform-Independent and Portable' has Ability to run on almost any Operating System and enables to run the Software. Does not require installation.** 
 
 ## Software Screenshots 
 
@@ -36,6 +36,9 @@
 ![2023-09-19 (3)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/b3e52c46-f2f8-4b63-a431-bd306487911e) 
 > Each time user submits the paragraph it will verify against above paragraph. If user types anything incorrectly it will result the above message like this to notify the user.
 > In Message: 
+> ❌There are some words misspelled. Please Check
+
+> [!NOTE]
 > ❌There are some words misspelled. Please Check 
 
 
