@@ -43,6 +43,7 @@
 <img src = "https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/b3e52c46-f2f8-4b63-a431-bd306487911e"></img> 
 <img src = "src/Resource/Incorrect.png" alt = "When user types incorrectly after verification"></img> 
 ![2023-09-19 (3)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/b3e52c46-f2f8-4b63-a431-bd306487911e) 
+<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Incorrect.png" alt = "When user types incorrectly after verification" width = "1814px" height = "1001px"></img> 
 > Each time user submits the paragraph it will verify against above paragraph. If user types anything incorrectly it will result the above message like this to notify the user.
 
 > In Message:
