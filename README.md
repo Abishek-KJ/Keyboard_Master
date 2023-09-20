@@ -23,16 +23,19 @@
 ## Software Screenshots 
 
 ### Screenshot:1 
+ <img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/LevelsImage.png" alt = "There are three category of levels:Beginner, Intermediate, Expertise. Levels are categorized for smooth progress"></img> 
  ![image](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/665e8067-7766-4676-b97b-2dff8884866a) 
  > There are three category of levels:Beginner, Intermediate, Expertise. Levels are categorized for smooth progress. 
  
 
 ### Screenshot:2 
- ![2023-09-18 (3)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/6ec3f091-363a-4882-a2ce-b9553e453b26) 
+<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Level1.png" alt = "Level 1 Playground"></img> 
+![2023-09-18 (3)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/6ec3f091-363a-4882-a2ce-b9553e453b26) 
 > Level 1 Playground. 
 
 ### Screenshot:3 
- ![2023-09-18 (8)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/9c7547ab-9b9a-40aa-9d5f-faf402f290a8) 
+<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Correct.png" alt = "Each time user submits the paragraph it will verify against  above paragraph it will verify against above paragraph. If user types correctly it will result the above message like this to notify the user In message:🎉Hurray! You have Completed Successfully :)"></img> 
+![2023-09-18 (8)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/9c7547ab-9b9a-40aa-9d5f-faf402f290a8) 
 > Each time user submits the paragraph it will verify against above paragraph. If user types correctly it will result the above message like this to notify the user.
 
 > In Message:
