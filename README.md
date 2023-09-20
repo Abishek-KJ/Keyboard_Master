@@ -29,7 +29,7 @@
 ### Screenshot:3 
  ![2023-09-18 (8)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/9c7547ab-9b9a-40aa-9d5f-faf402f290a8) 
 > Each time user submits the paragraph it will verify against above paragraph. If user types correctly it will result the above message like this to notify the user.
-> In Message: 
+> In Message 
 > 🎉Hurray! You have Completed Successfully :) 
 
 ### Screenshot:4 
