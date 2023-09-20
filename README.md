@@ -35,7 +35,7 @@
 ### Screenshot:4 
 ![2023-09-19 (3)](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/b3e52c46-f2f8-4b63-a431-bd306487911e) 
 > Each time user submits the paragraph it will verify against above paragraph. If user types anything incorrectly it will result the above message like this to notify the user.
-> In Message:
+> In Message: 
 > ❌There are some words misspelled. Please Check 
 
 
