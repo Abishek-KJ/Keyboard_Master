@@ -13,6 +13,8 @@
 
 ## How to run this Project ? 
 
+<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/DownloadHighlight.png" alt = "Download Highlight"></img> 
+
 ![Download Highlight ](https://github.com/Abishek-KJ/Keyboard_Master/assets/104722061/e316a09f-7c65-41a8-865b-09bcab51c05a)
 
 
