@@ -1,4 +1,6 @@
-![Icon]()
+![Icon]() 
+
+<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Icon.png" alt = "Software Icon" width = "800px" ></img> 
 
 # Keyboard Master using Java 
 
