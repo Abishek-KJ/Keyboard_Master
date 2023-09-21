@@ -4,9 +4,9 @@
 
 <!--<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Icon.png" alt = "Software Icon" width = "1000px" height = "600px" ></img> --> 
 
-<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Icon.png" alt = "Software Icon" width = "1000px" height = "500px" ></img> 
+<!--<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Icon.png" alt = "Software Icon" width = "1000px" height = "500px" ></img> --> 
 
-# Keyboard Master using Java 
+<img src = "https://github.com/Abishek-KJ/Keyboard_Master/blob/master/src/Resources/Icon.png" alt = "Software Icon" width = "50px" height = "50px" ></img> # Keyboard Master using Java 
 
 ## Description 
 
